@@ -83,10 +83,10 @@
             // 
             // graphPnl
             // 
-            this.graphPnl.Location = new System.Drawing.Point(11, 94);
+            this.graphPnl.Location = new System.Drawing.Point(21, 81);
             this.graphPnl.Margin = new System.Windows.Forms.Padding(2);
             this.graphPnl.Name = "graphPnl";
-            this.graphPnl.Size = new System.Drawing.Size(1228, 695);
+            this.graphPnl.Size = new System.Drawing.Size(1200, 700);
             this.graphPnl.TabIndex = 2;
             // 
             // label2
@@ -145,7 +145,6 @@
             this.toText.Name = "toText";
             this.toText.Size = new System.Drawing.Size(99, 29);
             this.toText.TabIndex = 19;
-            this.toText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel3
             // 
@@ -177,7 +176,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Graph";
             this.Text = "Graph";
-            this.Load += new System.EventHandler(this.Graph_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

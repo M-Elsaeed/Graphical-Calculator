@@ -26,36 +26,43 @@ namespace DarkDemo
 
         private void graphBtn_Click(object sender, EventArgs e)
         {
-            ArrayList xs = new ArrayList(), ys = new ArrayList();
-            float min = float.Parse(fromText.Text), max = float.Parse(toText.Text);
-            min = -500;max = 500;
-            float j = min;
-            while (j < max)
+            List<float> xs = new List<float>(), ys = new List<float>();
+            float from = float.Parse(fromText.Text), to = float.Parse(toText.Text);
+            float PANELX = graphPnl.Size.Width;
+            float PANELY = graphPnl.Size.Height;
+            float fMax = float.MinValue;
+            float fMin = float.MaxValue;
+            float j = from;
+            while (j < to)
             {
-                xs.Add(j);
-                ys.Add(-(j * j));
+                float y = j*j*j*j;
+                float x = j;
+                fMax = (y > fMax) ? y : fMax;
+                fMin = (y < fMin) ? y : fMin;
+                xs.Add(x);
+                ys.Add(-(y));
                 j += 0.001f;
-
             }
-
-            Pen blackpen = new Pen(Color.Red, 3);
-            Graphics g = graphPnl.CreateGraphics();
+            List<float> xss = new List<float>(), yss = new List<float>();
+            xss.Add(from);
+            float factor = PANELX / (to - from);
             for (int i = 1; i < xs.Count; i++)
             {
-                g.DrawLine(blackpen, (float)xs[i - 1] + 500, (float)ys[i - 1]+(500*500), (float)xs[i] + 500, (float)ys[i]+ (500 * 500));
+                xss.Add(xss[i - 1] + (Math.Abs((xs[i] - xs[i - 1])) * factor));
+            }
+            factor = PANELY / (fMax - fMin);
+            for (int i = 0; i < ys.Count; i++)
+            {                
+                ys[i] = ys[i] * factor;                
+            }            
+            Pen blackpen = new Pen(Color.Red, 3);
+            Graphics g = graphPnl.CreateGraphics();
+            g.Clear(graphPnl.BackColor);
+            for (int i = 1; i < xs.Count; i++)
+            {
+                g.DrawLine(blackpen, xss[i - 1] - from, ys[i - 1] + (fMax*factor), xss[i] - from, ys[i] + (fMax*factor));
             }
             g.Dispose();
-
-        }
-
-        private void Graph_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
