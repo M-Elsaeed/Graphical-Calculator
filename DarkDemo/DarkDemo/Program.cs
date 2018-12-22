@@ -14,7 +14,7 @@ namespace DarkDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Graph());
+            Application.Run(new Matrix());
         }
     }
 }
