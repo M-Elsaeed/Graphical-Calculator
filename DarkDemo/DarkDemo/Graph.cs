@@ -26,16 +26,20 @@ namespace DarkDemo
 
         private void graphBtn_Click(object sender, EventArgs e)
         {
-            List<float> xs = new List<float>(), ys = new List<float>();
+            // Declaring 
+            List<float> xs = new List<float>(), ys = new List<float>(), xss = new List<float>(), yss = new List<float>();
+            //Getting Range
             float from = float.Parse(fromText.Text), to = float.Parse(toText.Text);
+            //Scaling Parameters
             float PANELX = graphPnl.Size.Width;
             float PANELY = graphPnl.Size.Height;
             float fMax = float.MinValue;
             float fMin = float.MaxValue;
+            // Computing Points
             float j = from;
             while (j < to)
             {
-                float y = j*j*j*j;
+                float y = j;
                 float x = j;
                 fMax = (y > fMax) ? y : fMax;
                 fMin = (y < fMin) ? y : fMin;
@@ -43,24 +47,27 @@ namespace DarkDemo
                 ys.Add(-(y));
                 j += 0.001f;
             }
-            List<float> xss = new List<float>(), yss = new List<float>();
+            // Scaling X values
             xss.Add(from);
             float factor = PANELX / (to - from);
             for (int i = 1; i < xs.Count; i++)
             {
                 xss.Add(xss[i - 1] + (Math.Abs((xs[i] - xs[i - 1])) * factor));
+                //xs[i] = xs[i - 2] + (Math.Abs((xs[i-1] - xs[i - 2])) * factor);
             }
+            // Scaling Y values
             factor = PANELY / (fMax - fMin);
             for (int i = 0; i < ys.Count; i++)
-            {                
-                ys[i] = ys[i] * factor;                
-            }            
+            {
+                ys[i] = ys[i] * factor;
+            }
+            // Drawing From Computed Data
             Pen blackpen = new Pen(Color.Red, 3);
             Graphics g = graphPnl.CreateGraphics();
             g.Clear(graphPnl.BackColor);
             for (int i = 1; i < xs.Count; i++)
             {
-                g.DrawLine(blackpen, xss[i - 1] - from, ys[i - 1] + (fMax*factor), xss[i] - from, ys[i] + (fMax*factor));
+                g.DrawLine(blackpen, xss[i - 1] - from, ys[i - 1] + (fMax * factor), xss[i] - from, ys[i] + (fMax * factor));
             }
             g.Dispose();
         }
