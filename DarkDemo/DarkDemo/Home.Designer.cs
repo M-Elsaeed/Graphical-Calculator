@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(166, 519);
+            this.panel1.Size = new System.Drawing.Size(166, 600);
             this.panel1.TabIndex = 0;
             // 
             // button4
@@ -149,7 +149,7 @@
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, -24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 117);
+            this.label2.Size = new System.Drawing.Size(165, 176);
             this.label2.TabIndex = 0;
             this.label2.Text = "m";
             // 
@@ -163,9 +163,9 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(166, 298);
+            this.panel2.Location = new System.Drawing.Point(166, 379);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(627, 221);
+            this.panel2.Size = new System.Drawing.Size(790, 221);
             this.panel2.TabIndex = 1;
             // 
             // checkBox4
@@ -174,7 +174,7 @@
             this.checkBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.Location = new System.Drawing.Point(398, 145);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(128, 21);
+            this.checkBox4.Size = new System.Drawing.Size(195, 27);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "C# UI Academy";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             this.checkBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(398, 118);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(150, 21);
+            this.checkBox3.Size = new System.Drawing.Size(231, 27);
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "By SaLaaR HuSceyN";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -196,7 +196,7 @@
             this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(398, 91);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(129, 21);
+            this.checkBox2.Size = new System.Drawing.Size(188, 27);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "C# UI Designing";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@
             this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(398, 64);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(215, 21);
+            this.checkBox1.Size = new System.Drawing.Size(322, 27);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Lorem Ispum is a dummy Text";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -227,7 +227,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(392, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 21);
+            this.label3.Size = new System.Drawing.Size(72, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tasks";
             // 
@@ -236,7 +236,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(192, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 21);
+            this.label1.Size = new System.Drawing.Size(137, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Total Sales";
             // 
@@ -256,7 +256,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(692, 38);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(63, 27);
+            this.button5.Size = new System.Drawing.Size(90, 38);
             this.button5.TabIndex = 4;
             this.button5.Text = "Week";
             this.button5.UseVisualStyleBackColor = true;
@@ -292,16 +292,16 @@
             this.button8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(434, 37);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(63, 27);
+            this.button8.Size = new System.Drawing.Size(72, 27);
             this.button8.TabIndex = 4;
             this.button8.Text = "Year";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(793, 519);
+            this.ClientSize = new System.Drawing.Size(956, 600);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -313,7 +313,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
