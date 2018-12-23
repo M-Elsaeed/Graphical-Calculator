@@ -8,5 +8,23 @@ namespace DarkDemo
 {
     class graphController
     {
+        public GraphForm graphForm;
+
+        public graphController()
+        {
+            graphForm = new GraphForm();
+        }
+
+        public void showForm()
+        {
+            graphForm = new GraphForm();
+            graphForm.Show();
+        }
+
+        public void closeForm()
+        {
+            graphForm.Close();
+            Program.home.Show();
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace DarkDemo
             graph = new GraphForm();
 
             home = new Home();
-            Application.Run(home);
+            Application.Run(new GraphForm());
         }
     }
 }
