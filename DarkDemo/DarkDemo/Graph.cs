@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
+using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
@@ -23,23 +24,28 @@ namespace DarkDemo
             Program.home.Show();
             Close();
         }
-
-        private void graphBtn_Click(object sender, EventArgs e)
+        private void drawGraph()
         {
+
             // Declaring 
             List<float> xs = new List<float>(), ys = new List<float>(), xss = new List<float>(), yss = new List<float>();
             //Getting Range
             float from = float.Parse(fromText.Text), to = float.Parse(toText.Text);
+            //getting eqn
+            string eqn = eqnText.Text;
             //Scaling Parameters
             float PANELX = graphPnl.Size.Width;
             float PANELY = graphPnl.Size.Height;
             float fMax = float.MinValue;
             float fMin = float.MaxValue;
             // Computing Points
+            MathEvaluator me = new MathEvaluator();
             float j = from;
             while (j < to)
             {
-                float y = j;
+                string xString = eqn.Replace("x", ("(" + j + ")"));
+                xString = xString.Replace("X", ("(" + j + ")"));
+                float y = (float)me.Evaluate(xString);
                 float x = j;
                 fMax = (y > fMax) ? y : fMax;
                 fMin = (y < fMin) ? y : fMin;
@@ -70,6 +76,10 @@ namespace DarkDemo
                 g.DrawLine(blackpen, xss[i - 1] - from, ys[i - 1] + (fMax * factor), xss[i] - from, ys[i] + (fMax * factor));
             }
             g.Dispose();
+        }
+        private void graphBtn_Click(object sender, EventArgs e)
+        {
+            drawGraph();
         }
     }
 }
