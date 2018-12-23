@@ -39,6 +39,7 @@
             this.fromText = new System.Windows.Forms.TextBox();
             this.toText = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,9 +48,9 @@
             this.graphBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.graphBtn.FlatAppearance.BorderSize = 5;
             this.graphBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.graphBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.graphBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.graphBtn.ForeColor = System.Drawing.Color.White;
-            this.graphBtn.Location = new System.Drawing.Point(1093, 6);
+            this.graphBtn.Location = new System.Drawing.Point(1060, 11);
             this.graphBtn.Margin = new System.Windows.Forms.Padding(2);
             this.graphBtn.Name = "graphBtn";
             this.graphBtn.Size = new System.Drawing.Size(128, 56);
@@ -115,7 +116,7 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(11, 11);
@@ -149,6 +150,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel3.Controls.Add(this.closeBtn);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.toText);
             this.panel3.Controls.Add(this.graphBtn);
@@ -163,7 +165,20 @@
             this.panel3.Size = new System.Drawing.Size(1250, 76);
             this.panel3.TabIndex = 20;
             // 
-            // Graph
+            // closeBtn
+            // 
+            this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeBtn.Location = new System.Drawing.Point(1193, 12);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(45, 26);
+            this.closeBtn.TabIndex = 21;
+            this.closeBtn.Text = " X ";
+            this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
+            // GraphForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,7 +189,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Graph";
+            this.Name = "GraphForm";
             this.Text = "Graph";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -193,5 +208,6 @@
         private System.Windows.Forms.TextBox fromText;
         private System.Windows.Forms.TextBox toText;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button closeBtn;
     }
 }

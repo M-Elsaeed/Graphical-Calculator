@@ -9,7 +9,7 @@ namespace DarkDemo
 
         //Define Controllers
         public static matrixContoller matrixContoller;
-        public static GraphForm graph;
+        public static graphController graphController;
 
         [STAThread]
 
@@ -20,7 +20,8 @@ namespace DarkDemo
 
             //Initialize Controllers
             matrixContoller = new matrixContoller();
-            
+            graphController = new graphController();
+
             //Load Main Form
             home = new Home();
             Application.Run(home);

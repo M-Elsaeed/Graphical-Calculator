@@ -55,6 +55,7 @@
     <Compile Include="Arithmetic.Designer.cs">
       <DependentUpon>Arithmetic.cs</DependentUpon>
     </Compile>
+    <Compile Include="graphController.cs" />
     <Compile Include="Graph.cs">
       <SubType>Form</SubType>
     </Compile>

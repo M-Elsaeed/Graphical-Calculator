@@ -20,5 +20,10 @@ namespace DarkDemo
         {
             Program.matrixContoller.showForm(); 
         }
+
+        private void graphBtn_Click(object sender, EventArgs e)
+        {
+            Program.graphController.showForm();
+        }
     }
 }

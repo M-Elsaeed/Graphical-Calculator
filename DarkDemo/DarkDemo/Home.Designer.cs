@@ -177,6 +177,7 @@
             this.graphBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.graphBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.graphBtn.UseVisualStyleBackColor = true;
+            this.graphBtn.Click += new System.EventHandler(this.graphBtn_Click);
             // 
             // matrixBtn
             // 

@@ -11,11 +11,6 @@ namespace DarkDemo
     {
         public MatrixForm matrixForm;
 
-        public matrixContoller()
-        {
-            
-        }
-
         public void showForm()
         {
             Program.home.Hide();

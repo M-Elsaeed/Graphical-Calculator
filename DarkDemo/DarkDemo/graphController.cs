@@ -10,13 +10,9 @@ namespace DarkDemo
     {
         public GraphForm graphForm;
 
-        public graphController()
-        {
-            graphForm = new GraphForm();
-        }
-
         public void showForm()
         {
+            Program.home.Hide();
             graphForm = new GraphForm();
             graphForm.Show();
         }
