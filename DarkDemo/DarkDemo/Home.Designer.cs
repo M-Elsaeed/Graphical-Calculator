@@ -49,6 +49,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -132,6 +133,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -149,7 +151,7 @@
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, -24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 176);
+            this.label2.Size = new System.Drawing.Size(111, 117);
             this.label2.TabIndex = 0;
             this.label2.Text = "m";
             // 
@@ -174,7 +176,7 @@
             this.checkBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.Location = new System.Drawing.Point(398, 145);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 27);
+            this.checkBox4.Size = new System.Drawing.Size(128, 21);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "C# UI Academy";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -185,7 +187,7 @@
             this.checkBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(398, 118);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(231, 27);
+            this.checkBox3.Size = new System.Drawing.Size(150, 21);
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "By SaLaaR HuSceyN";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -196,7 +198,7 @@
             this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(398, 91);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(188, 27);
+            this.checkBox2.Size = new System.Drawing.Size(129, 21);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "C# UI Designing";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -207,7 +209,7 @@
             this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(398, 64);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(322, 27);
+            this.checkBox1.Size = new System.Drawing.Size(215, 21);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Lorem Ispum is a dummy Text";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -227,7 +229,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(392, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 30);
+            this.label3.Size = new System.Drawing.Size(49, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tasks";
             // 
@@ -236,7 +238,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(192, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 30);
+            this.label1.Size = new System.Drawing.Size(91, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Total Sales";
             // 
@@ -297,11 +299,24 @@
             this.button8.Text = "Year";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // closeBtn
+            // 
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeBtn.Location = new System.Drawing.Point(899, 12);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(45, 26);
+            this.closeBtn.TabIndex = 5;
+            this.closeBtn.Text = " X ";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(956, 600);
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -316,6 +331,7 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -350,6 +366,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button closeBtn;
     }
 }
 

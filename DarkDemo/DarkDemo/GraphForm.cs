@@ -12,9 +12,9 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    public partial class Graph : Form
+    public partial class GraphForm : Form
     {
-        public Graph()
+        public GraphForm()
         {
             InitializeComponent();
         }

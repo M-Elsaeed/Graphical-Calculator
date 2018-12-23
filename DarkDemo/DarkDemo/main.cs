@@ -7,19 +7,14 @@ namespace DarkDemo
     {
         public static Home home;
 
-        //intialize controllers
-        public static matrixContoller matrixContoller;
-        public static GraphForm graph;
         [STAThread]
 
-        static void Main()
+        static void main()
         {
+            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            matrixContoller = new matrixContoller();
-            graph = new GraphForm();
-
             home = new Home();
             Application.Run(home);
         }
