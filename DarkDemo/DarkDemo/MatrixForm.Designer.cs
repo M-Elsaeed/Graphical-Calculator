@@ -41,10 +41,11 @@
             this.rowLbl = new System.Windows.Forms.Button();
             this.columnLbl = new System.Windows.Forms.Button();
             this.columnTxtBox = new System.Windows.Forms.TextBox();
-            this.makeMatrix = new System.Windows.Forms.Button();
+            this.makeMatrixBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.splitter2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -158,6 +159,7 @@
             this.homeBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // rowTxtBox
             // 
@@ -203,17 +205,17 @@
             this.columnTxtBox.Size = new System.Drawing.Size(62, 20);
             this.columnTxtBox.TabIndex = 2;
             // 
-            // makeMatrix
+            // makeMatrixBtn
             // 
-            this.makeMatrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.makeMatrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.makeMatrix.Location = new System.Drawing.Point(1030, 122);
-            this.makeMatrix.Name = "makeMatrix";
-            this.makeMatrix.Size = new System.Drawing.Size(153, 38);
-            this.makeMatrix.TabIndex = 3;
-            this.makeMatrix.Text = "Make Matrix";
-            this.makeMatrix.UseVisualStyleBackColor = true;
-            this.makeMatrix.Click += new System.EventHandler(this.makeMatrix_Click);
+            this.makeMatrixBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.makeMatrixBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.makeMatrixBtn.Location = new System.Drawing.Point(1030, 122);
+            this.makeMatrixBtn.Name = "makeMatrixBtn";
+            this.makeMatrixBtn.Size = new System.Drawing.Size(153, 38);
+            this.makeMatrixBtn.TabIndex = 3;
+            this.makeMatrixBtn.Text = "Make Matrix";
+            this.makeMatrixBtn.UseVisualStyleBackColor = true;
+            this.makeMatrixBtn.Click += new System.EventHandler(this.makeMatrix_Click);
             // 
             // saveBtn
             // 
@@ -246,16 +248,29 @@
             this.splitter1.TabIndex = 10;
             this.splitter1.TabStop = false;
             // 
+            // resetBtn
+            // 
+            this.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBtn.Location = new System.Drawing.Point(1030, 750);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(153, 38);
+            this.resetBtn.TabIndex = 11;
+            this.resetBtn.Text = "Reset Matrix";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            // 
             // MatrixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1250, 800);
+            this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.splitter2);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.makeMatrix);
+            this.Controls.Add(this.makeMatrixBtn);
             this.Controls.Add(this.columnTxtBox);
             this.Controls.Add(this.columnLbl);
             this.Controls.Add(this.rowLbl);
@@ -287,10 +302,11 @@
         private System.Windows.Forms.Button rowLbl;
         private System.Windows.Forms.Button columnLbl;
         private System.Windows.Forms.TextBox columnTxtBox;
-        private System.Windows.Forms.Button makeMatrix;
+        private System.Windows.Forms.Button makeMatrixBtn;
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Label splitter2;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.Button resetBtn;
     }
 }
