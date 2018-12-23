@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,12 @@ namespace DarkDemo
 
         public matrixContoller()
         {
-            matrixForm = new MatrixForm();
+            
         }
 
         public void showForm()
         {
+            Program.home.Hide();
             matrixForm = new MatrixForm();
             matrixForm.Show();
         }
