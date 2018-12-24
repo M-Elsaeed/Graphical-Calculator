@@ -37,7 +37,6 @@
             this.differentiationPnl = new System.Windows.Forms.Panel();
             this.limitTxtBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.splitter2 = new System.Windows.Forms.Splitter();
             this.resultLbl = new System.Windows.Forms.Label();
             this.differentiateBtn = new System.Windows.Forms.Button();
             this.difeqnTextBox = new System.Windows.Forms.TextBox();
@@ -49,14 +48,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.fromTxtBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.intResultLbl = new System.Windows.Forms.Label();
             this.integrateBtn = new System.Windows.Forms.Button();
             this.intequTxtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel3.SuspendLayout();
             this.differentiationPnl.SuspendLayout();
             this.integrationPnl.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -97,7 +98,7 @@
             this.mainTxt.Name = "mainTxt";
             this.mainTxt.Size = new System.Drawing.Size(286, 73);
             this.mainTxt.TabIndex = 3;
-            this.mainTxt.Text = "Calculas";
+            this.mainTxt.Text = "Calculus";
             // 
             // closeBtn
             // 
@@ -128,12 +129,11 @@
             // 
             this.differentiationPnl.Controls.Add(this.limitTxtBox);
             this.differentiationPnl.Controls.Add(this.label4);
-            this.differentiationPnl.Controls.Add(this.splitter2);
             this.differentiationPnl.Controls.Add(this.resultLbl);
             this.differentiationPnl.Controls.Add(this.differentiateBtn);
             this.differentiationPnl.Controls.Add(this.difeqnTextBox);
             this.differentiationPnl.Controls.Add(this.label1);
-            this.differentiationPnl.Location = new System.Drawing.Point(487, 82);
+            this.differentiationPnl.Location = new System.Drawing.Point(6, 4);
             this.differentiationPnl.Name = "differentiationPnl";
             this.differentiationPnl.Size = new System.Drawing.Size(751, 706);
             this.differentiationPnl.TabIndex = 9;
@@ -155,15 +155,6 @@
             this.label4.Size = new System.Drawing.Size(108, 42);
             this.label4.TabIndex = 15;
             this.label4.Text = "At X :";
-            // 
-            // splitter2
-            // 
-            this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.splitter2.Location = new System.Drawing.Point(0, 0);
-            this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(3, 706);
-            this.splitter2.TabIndex = 14;
-            this.splitter2.TabStop = false;
             // 
             // resultLbl
             // 
@@ -223,12 +214,11 @@
             this.integrationPnl.Controls.Add(this.label6);
             this.integrationPnl.Controls.Add(this.fromTxtBox);
             this.integrationPnl.Controls.Add(this.label5);
-            this.integrationPnl.Controls.Add(this.splitter1);
             this.integrationPnl.Controls.Add(this.intResultLbl);
             this.integrationPnl.Controls.Add(this.integrateBtn);
             this.integrationPnl.Controls.Add(this.intequTxtBox);
             this.integrationPnl.Controls.Add(this.label3);
-            this.integrationPnl.Location = new System.Drawing.Point(487, 82);
+            this.integrationPnl.Location = new System.Drawing.Point(6, 4);
             this.integrationPnl.Name = "integrationPnl";
             this.integrationPnl.Size = new System.Drawing.Size(751, 706);
             this.integrationPnl.TabIndex = 14;
@@ -279,15 +269,6 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "From :";
             // 
-            // splitter1
-            // 
-            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 706);
-            this.splitter1.TabIndex = 13;
-            this.splitter1.TabStop = false;
-            // 
             // intResultLbl
             // 
             this.intResultLbl.AutoSize = true;
@@ -327,27 +308,47 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Equation :";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.splitter1);
+            this.panel1.Controls.Add(this.integrationPnl);
+            this.panel1.Controls.Add(this.differentiationPnl);
+            this.panel1.Location = new System.Drawing.Point(478, 83);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(760, 705);
+            this.panel1.TabIndex = 15;
+            // 
+            // splitter1
+            // 
+            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 705);
+            this.splitter1.TabIndex = 14;
+            this.splitter1.TabStop = false;
+            // 
             // CalculusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1250, 800);
-            this.Controls.Add(this.integrationPnl);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.integrationBtn);
-            this.Controls.Add(this.differentiationPnl);
             this.Controls.Add(this.differentiationBtn);
             this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CalculusForm";
             this.Text = "Calculus";
+            this.Load += new System.EventHandler(this.CalculusForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.differentiationPnl.ResumeLayout(false);
             this.differentiationPnl.PerformLayout();
             this.integrationPnl.ResumeLayout(false);
             this.integrationPnl.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -365,9 +366,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label resultLbl;
         private System.Windows.Forms.Button differentiateBtn;
-        private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.Panel integrationPnl;
-        private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label intResultLbl;
         private System.Windows.Forms.Button integrateBtn;
         private System.Windows.Forms.TextBox intequTxtBox;
@@ -379,5 +378,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox fromTxtBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }

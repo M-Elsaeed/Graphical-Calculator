@@ -30,5 +30,10 @@ namespace DarkDemo
         {
             Program.calculusController.showForm();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            this.Location=new System.Drawing.Point(200,100);
+        }
     }
 }

@@ -282,6 +282,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MatrixForm";
             this.Text = "Matrix";
+            this.Load += new System.EventHandler(this.MatrixForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

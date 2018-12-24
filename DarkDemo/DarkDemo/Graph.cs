@@ -91,5 +91,15 @@ namespace DarkDemo
         {
 
         }
+
+        private void GraphForm_Load(object sender, EventArgs e)
+        {
+            this.Location = new System.Drawing.Point(200, 100);
+        }
+
+        private void homeBtn_Click_1(object sender, EventArgs e)
+        {
+            Program.graphController.closeForm();
+        }
     }
 }

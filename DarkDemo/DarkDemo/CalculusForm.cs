@@ -44,5 +44,10 @@ namespace DarkDemo
         {
             Program.calculusController.Integrate(intequTxtBox, fromTxtBox, toTxtBox, intResultLbl);
         }
+
+        private void CalculusForm_Load(object sender, EventArgs e)
+        {
+            this.Location = new System.Drawing.Point(200, 100);
+        }
     }
 }
