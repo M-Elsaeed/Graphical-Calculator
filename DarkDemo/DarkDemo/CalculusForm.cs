@@ -37,12 +37,12 @@ namespace DarkDemo
 
         private void differentiateBtn_Click(object sender, EventArgs e)
         {
-            Program.calculusController.Differentiate(eqnTextBox, limitTxtBox, resultLbl);
+            Program.calculusController.Differentiate(difeqnTextBox, limitTxtBox, resultLbl);
         }
 
         private void integrateBtn_Click(object sender, EventArgs e)
         {
-            Program.calculusController.Differentiate(eqnTextBox, limitTxtBox, resultLbl);
+            Program.calculusController.Integrate(intequTxtBox, fromTxtBox, toTxtBox, intResultLbl);
         }
     }
 }

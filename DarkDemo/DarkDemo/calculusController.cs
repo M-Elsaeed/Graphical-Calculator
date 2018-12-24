@@ -54,28 +54,33 @@ namespace DarkDemo
             resultLbl.Text = (y1 - y2) / (limitX1 - limitX2) + "";
         }
 
-        public void Integrate(TextBox eqnTextBox, TextBox limitTxtBox, Label resultLbl)
+        public void Integrate(TextBox eqnTextBox, TextBox fromTxtBox, TextBox toTxtBox, Label resultLbl)
         {
-            string eqn = eqnTextBox.Text;
-
             MathEvaluator me = new MathEvaluator();
+            string eqn = eqnTextBox.Text;
+            double area = 0;
+            double from = double.Parse(fromTxtBox.Text);
+            double to = double.Parse(toTxtBox.Text);
 
-            double limit = double.Parse(limitTxtBox.Text);
+            double sliceWidth = 0.01;
 
-            double limitX1 = limit - 0.0001;
-            double limitX2 = limit + 0.0001;
+            List<double> ys = new List<double>();
 
-            string xString1 = eqn.Replace("x", ("(" + limitX1 + ")"));
-            xString1 = xString1.Replace("X", ("(" + limitX1 + ")"));
+            while (to>=from)
+            {
+                string xString = eqn.Replace("x", ("(" + from + ")"));
+                xString = xString.Replace("X", ("(" + from + ")"));
 
-            double y1 = me.Evaluate(xString1);
+                ys.Add(me.Evaluate(xString));
 
-            string xString2 = eqn.Replace("x", ("(" + limitX2 + ")"));
-            xString2 = xString2.Replace("X", ("(" + limitX2 + ")"));
+                from = from + sliceWidth;
+            }
 
-            float y2 = (float)me.Evaluate(xString2);
-
-            resultLbl.Text = (y1 - y2) / (limitX1 - limitX2) + "";
+            for (int i = 0; i < ys.Count-1; i++)
+            {
+                area = area + 0.5 * (ys[i] + ys[i + 1])*(sliceWidth);
+            }
+            resultLbl.Text = area + "";
         }
     }
 }

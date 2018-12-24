@@ -40,20 +40,20 @@
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.resultLbl = new System.Windows.Forms.Label();
             this.differentiateBtn = new System.Windows.Forms.Button();
-            this.eqnTextBox = new System.Windows.Forms.TextBox();
+            this.difeqnTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.integrationBtn = new System.Windows.Forms.Button();
             this.integrationPnl = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.label2 = new System.Windows.Forms.Label();
-            this.integrateBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.toTxtBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.fromTxtBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.intResultLbl = new System.Windows.Forms.Label();
+            this.integrateBtn = new System.Windows.Forms.Button();
+            this.intequTxtBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.differentiationPnl.SuspendLayout();
             this.integrationPnl.SuspendLayout();
@@ -116,7 +116,7 @@
             // 
             this.differentiationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.differentiationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.differentiationBtn.Location = new System.Drawing.Point(187, 198);
+            this.differentiationBtn.Location = new System.Drawing.Point(132, 191);
             this.differentiationBtn.Name = "differentiationBtn";
             this.differentiationBtn.Size = new System.Drawing.Size(214, 70);
             this.differentiationBtn.TabIndex = 8;
@@ -131,7 +131,7 @@
             this.differentiationPnl.Controls.Add(this.splitter2);
             this.differentiationPnl.Controls.Add(this.resultLbl);
             this.differentiationPnl.Controls.Add(this.differentiateBtn);
-            this.differentiationPnl.Controls.Add(this.eqnTextBox);
+            this.differentiationPnl.Controls.Add(this.difeqnTextBox);
             this.differentiationPnl.Controls.Add(this.label1);
             this.differentiationPnl.Location = new System.Drawing.Point(487, 82);
             this.differentiationPnl.Name = "differentiationPnl";
@@ -186,14 +186,13 @@
             this.differentiateBtn.UseVisualStyleBackColor = true;
             this.differentiateBtn.Click += new System.EventHandler(this.differentiateBtn_Click);
             // 
-            // eqnTextBox
+            // difeqnTextBox
             // 
-            this.eqnTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
-            this.eqnTextBox.Location = new System.Drawing.Point(233, 92);
-            this.eqnTextBox.Name = "eqnTextBox";
-            this.eqnTextBox.Size = new System.Drawing.Size(485, 49);
-            this.eqnTextBox.TabIndex = 1;
-            this.eqnTextBox.Text = "enter equation in terms of X";
+            this.difeqnTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.difeqnTextBox.Location = new System.Drawing.Point(233, 92);
+            this.difeqnTextBox.Name = "difeqnTextBox";
+            this.difeqnTextBox.Size = new System.Drawing.Size(485, 49);
+            this.difeqnTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -209,7 +208,7 @@
             // 
             this.integrationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.integrationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.integrationBtn.Location = new System.Drawing.Point(187, 532);
+            this.integrationBtn.Location = new System.Drawing.Point(132, 551);
             this.integrationBtn.Name = "integrationBtn";
             this.integrationBtn.Size = new System.Drawing.Size(214, 70);
             this.integrationBtn.TabIndex = 10;
@@ -220,94 +219,37 @@
             // integrationPnl
             // 
             this.integrationPnl.Controls.Add(this.label7);
-            this.integrationPnl.Controls.Add(this.textBox3);
+            this.integrationPnl.Controls.Add(this.toTxtBox);
             this.integrationPnl.Controls.Add(this.label6);
-            this.integrationPnl.Controls.Add(this.textBox1);
+            this.integrationPnl.Controls.Add(this.fromTxtBox);
             this.integrationPnl.Controls.Add(this.label5);
             this.integrationPnl.Controls.Add(this.splitter1);
-            this.integrationPnl.Controls.Add(this.label2);
+            this.integrationPnl.Controls.Add(this.intResultLbl);
             this.integrationPnl.Controls.Add(this.integrateBtn);
-            this.integrationPnl.Controls.Add(this.textBox2);
+            this.integrationPnl.Controls.Add(this.intequTxtBox);
             this.integrationPnl.Controls.Add(this.label3);
             this.integrationPnl.Location = new System.Drawing.Point(487, 82);
             this.integrationPnl.Name = "integrationPnl";
             this.integrationPnl.Size = new System.Drawing.Size(751, 706);
             this.integrationPnl.TabIndex = 14;
             // 
-            // splitter1
+            // label7
             // 
-            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 706);
-            this.splitter1.TabIndex = 13;
-            this.splitter1.TabStop = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(383, 196);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 42);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Limits";
             // 
-            // label2
+            // toTxtBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(371, 582);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "label2";
-            // 
-            // integrateBtn
-            // 
-            this.integrateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.integrateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.integrateBtn.Location = new System.Drawing.Point(283, 450);
-            this.integrateBtn.Name = "integrateBtn";
-            this.integrateBtn.Size = new System.Drawing.Size(214, 70);
-            this.integrateBtn.TabIndex = 11;
-            this.integrateBtn.Text = "integrate";
-            this.integrateBtn.UseVisualStyleBackColor = true;
-            this.integrateBtn.Click += new System.EventHandler(this.integrateBtn_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
-            this.textBox2.Location = new System.Drawing.Point(233, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(485, 49);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(39, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 42);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Equation :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
-            this.textBox1.Location = new System.Drawing.Point(242, 282);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(77, 49);
-            this.textBox1.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(112, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 42);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "From :";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
-            this.textBox3.Location = new System.Drawing.Point(624, 282);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(77, 49);
-            this.textBox3.TabIndex = 17;
+            this.toTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.toTxtBox.Location = new System.Drawing.Point(624, 282);
+            this.toTxtBox.Name = "toTxtBox";
+            this.toTxtBox.Size = new System.Drawing.Size(77, 49);
+            this.toTxtBox.TabIndex = 17;
             // 
             // label6
             // 
@@ -319,15 +261,71 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "To :";
             // 
-            // label7
+            // fromTxtBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(362, 196);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 42);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Limits";
+            this.fromTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.fromTxtBox.Location = new System.Drawing.Point(242, 282);
+            this.fromTxtBox.Name = "fromTxtBox";
+            this.fromTxtBox.Size = new System.Drawing.Size(77, 49);
+            this.fromTxtBox.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(112, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 42);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "From :";
+            // 
+            // splitter1
+            // 
+            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 706);
+            this.splitter1.TabIndex = 13;
+            this.splitter1.TabStop = false;
+            // 
+            // intResultLbl
+            // 
+            this.intResultLbl.AutoSize = true;
+            this.intResultLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.intResultLbl.Location = new System.Drawing.Point(407, 582);
+            this.intResultLbl.Name = "intResultLbl";
+            this.intResultLbl.Size = new System.Drawing.Size(0, 13);
+            this.intResultLbl.TabIndex = 12;
+            // 
+            // integrateBtn
+            // 
+            this.integrateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.integrateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.integrateBtn.Location = new System.Drawing.Point(339, 393);
+            this.integrateBtn.Name = "integrateBtn";
+            this.integrateBtn.Size = new System.Drawing.Size(214, 70);
+            this.integrateBtn.TabIndex = 11;
+            this.integrateBtn.Text = "integrate";
+            this.integrateBtn.UseVisualStyleBackColor = true;
+            this.integrateBtn.Click += new System.EventHandler(this.integrateBtn_Click);
+            // 
+            // intequTxtBox
+            // 
+            this.intequTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.intequTxtBox.Location = new System.Drawing.Point(233, 92);
+            this.intequTxtBox.Name = "intequTxtBox";
+            this.intequTxtBox.Size = new System.Drawing.Size(485, 49);
+            this.intequTxtBox.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(39, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 42);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Equation :";
             // 
             // CalculusForm
             // 
@@ -363,23 +361,23 @@
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Panel differentiationPnl;
         private System.Windows.Forms.Button integrationBtn;
-        private System.Windows.Forms.TextBox eqnTextBox;
+        private System.Windows.Forms.TextBox difeqnTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label resultLbl;
         private System.Windows.Forms.Button differentiateBtn;
         private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.Panel integrationPnl;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label intResultLbl;
         private System.Windows.Forms.Button integrateBtn;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox intequTxtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox limitTxtBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox toTxtBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fromTxtBox;
         private System.Windows.Forms.Label label5;
     }
 }
