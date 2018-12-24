@@ -46,12 +46,14 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.mainTxt = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.Button();
+            this.transposeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.transposeBtn);
             this.panel1.Controls.Add(this.multiplyBtn);
             this.panel1.Controls.Add(this.minusBtn);
             this.panel1.Controls.Add(this.plusBtn);
@@ -261,6 +263,22 @@
             this.closeBtn.UseVisualStyleBackColor = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click_1);
             // 
+            // transposeBtn
+            // 
+            this.transposeBtn.FlatAppearance.BorderSize = 0;
+            this.transposeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transposeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transposeBtn.ForeColor = System.Drawing.Color.White;
+            this.transposeBtn.Image = ((System.Drawing.Image)(resources.GetObject("transposeBtn.Image")));
+            this.transposeBtn.Location = new System.Drawing.Point(0, 6);
+            this.transposeBtn.Name = "transposeBtn";
+            this.transposeBtn.Size = new System.Drawing.Size(140, 142);
+            this.transposeBtn.TabIndex = 8;
+            this.transposeBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.transposeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.transposeBtn.UseVisualStyleBackColor = true;
+            this.transposeBtn.Click += new System.EventHandler(this.transposeBtn_Click);
+            // 
             // MatrixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,5 +327,6 @@
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Label mainTxt;
         private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.Button transposeBtn;
     }
 }
