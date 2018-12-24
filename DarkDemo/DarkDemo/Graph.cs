@@ -28,7 +28,7 @@ namespace DarkDemo
         {
 
             // Declaring 
-            List<float> xs = new List<float>(), ys = new List<float>(), xss = new List<float>(), yss = new List<float>();
+            List<float> xs = new List<float>(), ys = new List<float>();
             //Getting Range
             float from = float.Parse(fromText.Text), to = float.Parse(toText.Text);
             //getting eqn
@@ -54,26 +54,30 @@ namespace DarkDemo
                 j += 0.001f;
             }
             // Scaling X values
-            xss.Add(from);
-            float factor = PANELX / (to - from);
-            for (int i = 1; i < xs.Count; i++)
+            float factorX = PANELX / (to - from);
+            for (int i = 0; i < xs.Count; i++)
             {
-                xss.Add(xss[i - 1] + (Math.Abs((xs[i] - xs[i - 1])) * factor));
-                //xs[i] = xs[i - 2] + (Math.Abs((xs[i-1] - xs[i - 2])) * factor);
+                xs[i] = xs[i] * factorX;
             }
             // Scaling Y values
-            factor = PANELY / (fMax - fMin);
+            float factorY = PANELY / (fMax - fMin);
             for (int i = 0; i < ys.Count; i++)
             {
-                ys[i] = ys[i] * factor;
+                ys[i] = ys[i] * factorY;
             }
             // Drawing From Computed Data
-            Pen blackpen = new Pen(Color.Red, 3);
+            Pen graphPen = new Pen(Color.Red, 3);
+            Pen axisPen = new Pen(Color.White, 3);
             Graphics g = graphPnl.CreateGraphics();
             g.Clear(graphPnl.BackColor);
+            //Draw X axis
+            g.DrawLine(axisPen, 0, (fMax * factorY), PANELX, (fMax * factorY));
+            //Drawing Y axix
+            g.DrawLine(axisPen, -(from * factorX), 0, -(from * factorX), PANELY);
+            //Drawing Graph
             for (int i = 1; i < xs.Count; i++)
             {
-                g.DrawLine(blackpen, xss[i - 1] - from, ys[i - 1] + (fMax * factor), xss[i] - from, ys[i] + (fMax * factor));
+                g.DrawLine(graphPen, xs[i - 1] - (from * factorX), ys[i - 1] + (fMax * factorY), xs[i] - (from * factorX), ys[i] + (fMax * factorY));
             }
             g.Dispose();
         }
