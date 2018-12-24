@@ -86,5 +86,10 @@ namespace DarkDemo
         {
             Program.graphController.closeForm();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

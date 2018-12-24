@@ -55,6 +55,13 @@
     <Compile Include="Arithmetic.Designer.cs">
       <DependentUpon>Arithmetic.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculusForm.Designer.cs">
+      <DependentUpon>CalculusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculusController.cs" />
     <Compile Include="graphController.cs" />
     <Compile Include="Graph.cs">
       <SubType>Form</SubType>
@@ -79,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Arithmetic.resx">
       <DependentUpon>Arithmetic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculusForm.resx">
+      <DependentUpon>CalculusForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graph.resx">
       <DependentUpon>Graph.cs</DependentUpon>

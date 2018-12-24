@@ -25,5 +25,10 @@ namespace DarkDemo
         {
             Program.graphController.showForm();
         }
+
+        private void calculusBtn_Click(object sender, EventArgs e)
+        {
+            Program.calculusController.showForm();
+        }
     }
 }

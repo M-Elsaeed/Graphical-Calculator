@@ -49,7 +49,7 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(968, 702);
+            this.button5.Location = new System.Drawing.Point(982, 697);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(90, 38);
             this.button5.TabIndex = 4;
@@ -60,7 +60,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(799, 125);
+            this.label3.Location = new System.Drawing.Point(861, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 39);
             this.label3.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(806, 271);
+            this.checkBox4.Location = new System.Drawing.Point(868, 271);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(120, 20);
             this.checkBox4.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(806, 244);
+            this.checkBox3.Location = new System.Drawing.Point(868, 244);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(157, 20);
             this.checkBox3.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(806, 217);
+            this.checkBox2.Location = new System.Drawing.Point(868, 217);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(123, 20);
             this.checkBox2.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(806, 190);
+            this.checkBox1.Location = new System.Drawing.Point(868, 190);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(204, 20);
             this.checkBox1.TabIndex = 4;
@@ -132,7 +132,7 @@
             this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeBtn.Location = new System.Drawing.Point(1143, 12);
+            this.closeBtn.Location = new System.Drawing.Point(1193, 12);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(45, 26);
             this.closeBtn.TabIndex = 5;
@@ -148,7 +148,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1200, 76);
+            this.panel3.Size = new System.Drawing.Size(1250, 76);
             this.panel3.TabIndex = 6;
             // 
             // mainTxt
@@ -213,12 +213,13 @@
             this.calculusBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.calculusBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.calculusBtn.UseVisualStyleBackColor = true;
+            this.calculusBtn.Click += new System.EventHandler(this.calculusBtn_Click);
             // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(1250, 800);
             this.Controls.Add(this.calculusBtn);
             this.Controls.Add(this.matrixBtn);
             this.Controls.Add(this.graphBtn);

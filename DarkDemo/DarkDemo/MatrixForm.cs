@@ -24,16 +24,6 @@ namespace DarkDemo
             multiplyBtn.Enabled = false;
         }
 
-        private void closeBtn_Click(object sender, EventArgs e)
-        {
-            Program.matrixContoller.closeApplication();
-        }
-
-        private void homeBtn_Click(object sender, EventArgs e)
-        {
-            Program.matrixContoller.closeForm();
-        }
-
         private void resetBtn_Click(object sender, EventArgs e)
         {
             Program.matrixContoller.reset();
@@ -68,6 +58,16 @@ namespace DarkDemo
         private void multiplyBtn_Click(object sender, EventArgs e)
         {
             Program.matrixContoller.matrixMultiplication(this, makeMatrixBtn, saveBtn);
+        }
+
+        private void homeBtn_Click_1(object sender, EventArgs e)
+        {
+            Program.matrixContoller.closeForm();
+        }
+
+        private void closeBtn_Click_1(object sender, EventArgs e)
+        {
+            Program.matrixContoller.closeApplication();
         }
     }
 }
