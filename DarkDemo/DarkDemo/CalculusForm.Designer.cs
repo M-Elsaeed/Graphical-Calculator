@@ -35,6 +35,8 @@
             this.closeBtn = new System.Windows.Forms.Button();
             this.differentiationBtn = new System.Windows.Forms.Button();
             this.differentiationPnl = new System.Windows.Forms.Panel();
+            this.limitTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.resultLbl = new System.Windows.Forms.Label();
             this.differentiateBtn = new System.Windows.Forms.Button();
@@ -47,8 +49,11 @@
             this.integrateBtn = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.limitTxtBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.differentiationPnl.SuspendLayout();
             this.integrationPnl.SuspendLayout();
@@ -133,6 +138,24 @@
             this.differentiationPnl.Size = new System.Drawing.Size(751, 706);
             this.differentiationPnl.TabIndex = 9;
             // 
+            // limitTxtBox
+            // 
+            this.limitTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.limitTxtBox.Location = new System.Drawing.Point(410, 193);
+            this.limitTxtBox.Name = "limitTxtBox";
+            this.limitTxtBox.Size = new System.Drawing.Size(66, 49);
+            this.limitTxtBox.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(276, 196);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 42);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "At X :";
+            // 
             // splitter2
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
@@ -145,12 +168,11 @@
             // resultLbl
             // 
             this.resultLbl.AutoSize = true;
-            this.resultLbl.ForeColor = System.Drawing.Color.White;
+            this.resultLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.resultLbl.Location = new System.Drawing.Point(371, 582);
             this.resultLbl.Name = "resultLbl";
-            this.resultLbl.Size = new System.Drawing.Size(35, 13);
+            this.resultLbl.Size = new System.Drawing.Size(0, 13);
             this.resultLbl.TabIndex = 12;
-            this.resultLbl.Text = "label2";
             // 
             // differentiateBtn
             // 
@@ -197,12 +219,17 @@
             // 
             // integrationPnl
             // 
+            this.integrationPnl.Controls.Add(this.label7);
+            this.integrationPnl.Controls.Add(this.textBox3);
+            this.integrationPnl.Controls.Add(this.label6);
+            this.integrationPnl.Controls.Add(this.textBox1);
+            this.integrationPnl.Controls.Add(this.label5);
             this.integrationPnl.Controls.Add(this.splitter1);
             this.integrationPnl.Controls.Add(this.label2);
             this.integrationPnl.Controls.Add(this.integrateBtn);
             this.integrationPnl.Controls.Add(this.textBox2);
             this.integrationPnl.Controls.Add(this.label3);
-            this.integrationPnl.Location = new System.Drawing.Point(2, 481);
+            this.integrationPnl.Location = new System.Drawing.Point(487, 82);
             this.integrationPnl.Name = "integrationPnl";
             this.integrationPnl.Size = new System.Drawing.Size(751, 706);
             this.integrationPnl.TabIndex = 14;
@@ -230,7 +257,7 @@
             // 
             this.integrateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.integrateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.integrateBtn.Location = new System.Drawing.Point(283, 364);
+            this.integrateBtn.Location = new System.Drawing.Point(283, 450);
             this.integrateBtn.Name = "integrateBtn";
             this.integrateBtn.Size = new System.Drawing.Size(214, 70);
             this.integrateBtn.TabIndex = 11;
@@ -256,23 +283,51 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Equation :";
             // 
-            // limitTxtBox
+            // textBox1
             // 
-            this.limitTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
-            this.limitTxtBox.Location = new System.Drawing.Point(410, 193);
-            this.limitTxtBox.Name = "limitTxtBox";
-            this.limitTxtBox.Size = new System.Drawing.Size(66, 49);
-            this.limitTxtBox.TabIndex = 16;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.textBox1.Location = new System.Drawing.Point(242, 282);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(77, 49);
+            this.textBox1.TabIndex = 15;
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(276, 196);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 42);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "At X :";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(112, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 42);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "From :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.textBox3.Location = new System.Drawing.Point(624, 282);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(77, 49);
+            this.textBox3.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(536, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 42);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "To :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(362, 196);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 42);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Limits";
             // 
             // CalculusForm
             // 
@@ -321,5 +376,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox limitTxtBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
