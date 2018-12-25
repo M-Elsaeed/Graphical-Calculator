@@ -51,6 +51,14 @@ namespace DarkDemo
                 ys.Add(-(y));
                 j += 0.001f;
             }
+            if (from > 0)
+                from = 0;
+            if (to < 0)
+                to = 0;
+            if (fMax < 0)
+                fMax = 0;
+            if (fMin > 0)
+                fMin = 0;
             // Scaling X values
             float factorX = PANELX / (to - from);
             for (int i = 0; i < xs.Count; i++)
