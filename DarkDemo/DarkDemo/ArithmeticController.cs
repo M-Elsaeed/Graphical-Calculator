@@ -50,6 +50,8 @@ namespace DarkDemo
         {
             MathEvaluator me = new MathEvaluator();
             equationTxtBox.Text = me.Evaluate(eqnToEvaluate) + "";
+            Program.historyController.addEquation(eqnToEvaluate);
+            Program.historyController.addResult((float)me.Evaluate(eqnToEvaluate));
         }
 
         public void clear(TextBox equationTxtBox)

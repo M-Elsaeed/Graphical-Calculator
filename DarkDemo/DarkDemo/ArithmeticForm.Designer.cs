@@ -79,6 +79,12 @@
             this.secInverseBtn = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.logsAndExponentsPnl = new System.Windows.Forms.Panel();
+            this.squareRoot = new System.Windows.Forms.Button();
+            this.power = new System.Windows.Forms.Button();
+            this.lnBtn = new System.Windows.Forms.Button();
+            this.logBtn = new System.Windows.Forms.Button();
+            this.power3Btn = new System.Windows.Forms.Button();
+            this.power2Btn = new System.Windows.Forms.Button();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.panel3 = new System.Windows.Forms.Panel();
             this.homeBtn = new System.Windows.Forms.Button();
@@ -93,12 +99,7 @@
             this.sinBtn = new System.Windows.Forms.Button();
             this.atanBtn = new System.Windows.Forms.Button();
             this.asinBtn = new System.Windows.Forms.Button();
-            this.power2Btn = new System.Windows.Forms.Button();
-            this.power3Btn = new System.Windows.Forms.Button();
-            this.logBtn = new System.Windows.Forms.Button();
-            this.lnBtn = new System.Windows.Forms.Button();
-            this.power = new System.Windows.Forms.Button();
-            this.squareRoot = new System.Windows.Forms.Button();
+            this.historyBtn = new System.Windows.Forms.Button();
             this.aritmeticsPnl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -116,9 +117,10 @@
             this.aritmeticsPnl.Controls.Add(this.panel4);
             this.aritmeticsPnl.Controls.Add(this.panel2);
             this.aritmeticsPnl.Controls.Add(this.panel1);
-            this.aritmeticsPnl.Location = new System.Drawing.Point(12, 259);
+            this.aritmeticsPnl.Location = new System.Drawing.Point(18, 398);
+            this.aritmeticsPnl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.aritmeticsPnl.Name = "aritmeticsPnl";
-            this.aritmeticsPnl.Size = new System.Drawing.Size(400, 529);
+            this.aritmeticsPnl.Size = new System.Drawing.Size(600, 814);
             this.aritmeticsPnl.TabIndex = 11;
             // 
             // panel4
@@ -129,18 +131,20 @@
             this.panel4.Controls.Add(this.ACbtn);
             this.panel4.Controls.Add(this.deleteBtn);
             this.panel4.Controls.Add(this.pointBtn);
-            this.panel4.Location = new System.Drawing.Point(3, 9);
+            this.panel4.Location = new System.Drawing.Point(4, 14);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(394, 157);
+            this.panel4.Size = new System.Drawing.Size(591, 242);
             this.panel4.TabIndex = 15;
             // 
             // splitter4
             // 
             this.splitter4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.splitter4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter4.Location = new System.Drawing.Point(0, 154);
+            this.splitter4.Location = new System.Drawing.Point(0, 237);
+            this.splitter4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter4.Name = "splitter4";
-            this.splitter4.Size = new System.Drawing.Size(394, 3);
+            this.splitter4.Size = new System.Drawing.Size(591, 5);
             this.splitter4.TabIndex = 43;
             this.splitter4.TabStop = false;
             // 
@@ -148,9 +152,10 @@
             // 
             this.closeBracketBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBracketBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeBracketBtn.Location = new System.Drawing.Point(80, 3);
+            this.closeBracketBtn.Location = new System.Drawing.Point(120, 5);
+            this.closeBracketBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeBracketBtn.Name = "closeBracketBtn";
-            this.closeBracketBtn.Size = new System.Drawing.Size(74, 70);
+            this.closeBracketBtn.Size = new System.Drawing.Size(111, 108);
             this.closeBracketBtn.TabIndex = 42;
             this.closeBracketBtn.Text = ")";
             this.closeBracketBtn.UseVisualStyleBackColor = true;
@@ -160,9 +165,10 @@
             // 
             this.openBrackerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openBrackerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openBrackerBtn.Location = new System.Drawing.Point(3, 3);
+            this.openBrackerBtn.Location = new System.Drawing.Point(4, 5);
+            this.openBrackerBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.openBrackerBtn.Name = "openBrackerBtn";
-            this.openBrackerBtn.Size = new System.Drawing.Size(74, 70);
+            this.openBrackerBtn.Size = new System.Drawing.Size(111, 108);
             this.openBrackerBtn.TabIndex = 41;
             this.openBrackerBtn.Text = "(";
             this.openBrackerBtn.UseVisualStyleBackColor = true;
@@ -172,9 +178,10 @@
             // 
             this.ACbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ACbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACbtn.Location = new System.Drawing.Point(157, 3);
+            this.ACbtn.Location = new System.Drawing.Point(236, 5);
+            this.ACbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ACbtn.Name = "ACbtn";
-            this.ACbtn.Size = new System.Drawing.Size(234, 70);
+            this.ACbtn.Size = new System.Drawing.Size(351, 108);
             this.ACbtn.TabIndex = 40;
             this.ACbtn.Text = "AC";
             this.ACbtn.UseVisualStyleBackColor = true;
@@ -184,9 +191,10 @@
             // 
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBtn.Location = new System.Drawing.Point(157, 79);
+            this.deleteBtn.Location = new System.Drawing.Point(236, 122);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(237, 70);
+            this.deleteBtn.Size = new System.Drawing.Size(356, 108);
             this.deleteBtn.TabIndex = 39;
             this.deleteBtn.Text = "DEL";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -196,9 +204,10 @@
             // 
             this.pointBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pointBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pointBtn.Location = new System.Drawing.Point(0, 79);
+            this.pointBtn.Location = new System.Drawing.Point(0, 122);
+            this.pointBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pointBtn.Name = "pointBtn";
-            this.pointBtn.Size = new System.Drawing.Size(154, 70);
+            this.pointBtn.Size = new System.Drawing.Size(231, 108);
             this.pointBtn.TabIndex = 38;
             this.pointBtn.Text = ".";
             this.pointBtn.UseVisualStyleBackColor = true;
@@ -211,18 +220,20 @@
             this.panel2.Controls.Add(this.plusBtn);
             this.panel2.Controls.Add(this.equalBtn);
             this.panel2.Controls.Add(this.minusBtn);
-            this.panel2.Location = new System.Drawing.Point(83, 172);
+            this.panel2.Location = new System.Drawing.Point(124, 265);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(259, 177);
+            this.panel2.Size = new System.Drawing.Size(388, 272);
             this.panel2.TabIndex = 33;
             // 
             // multiplyBtn
             // 
             this.multiplyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multiplyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiplyBtn.Location = new System.Drawing.Point(15, 12);
+            this.multiplyBtn.Location = new System.Drawing.Point(22, 18);
+            this.multiplyBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.multiplyBtn.Name = "multiplyBtn";
-            this.multiplyBtn.Size = new System.Drawing.Size(74, 74);
+            this.multiplyBtn.Size = new System.Drawing.Size(111, 114);
             this.multiplyBtn.TabIndex = 21;
             this.multiplyBtn.Text = "*";
             this.multiplyBtn.UseVisualStyleBackColor = true;
@@ -232,9 +243,10 @@
             // 
             this.divideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.divideBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divideBtn.Location = new System.Drawing.Point(95, 92);
+            this.divideBtn.Location = new System.Drawing.Point(142, 142);
+            this.divideBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.divideBtn.Name = "divideBtn";
-            this.divideBtn.Size = new System.Drawing.Size(74, 74);
+            this.divideBtn.Size = new System.Drawing.Size(111, 114);
             this.divideBtn.TabIndex = 27;
             this.divideBtn.Text = "/";
             this.divideBtn.UseVisualStyleBackColor = true;
@@ -244,9 +256,10 @@
             // 
             this.plusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusBtn.Location = new System.Drawing.Point(95, 12);
+            this.plusBtn.Location = new System.Drawing.Point(142, 18);
+            this.plusBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.plusBtn.Name = "plusBtn";
-            this.plusBtn.Size = new System.Drawing.Size(74, 74);
+            this.plusBtn.Size = new System.Drawing.Size(111, 114);
             this.plusBtn.TabIndex = 23;
             this.plusBtn.Text = "+";
             this.plusBtn.UseVisualStyleBackColor = true;
@@ -256,9 +269,10 @@
             // 
             this.equalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.equalBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equalBtn.Location = new System.Drawing.Point(175, 12);
+            this.equalBtn.Location = new System.Drawing.Point(262, 18);
+            this.equalBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.equalBtn.Name = "equalBtn";
-            this.equalBtn.Size = new System.Drawing.Size(74, 154);
+            this.equalBtn.Size = new System.Drawing.Size(111, 237);
             this.equalBtn.TabIndex = 25;
             this.equalBtn.Text = "=";
             this.equalBtn.UseVisualStyleBackColor = true;
@@ -268,9 +282,10 @@
             // 
             this.minusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minusBtn.Location = new System.Drawing.Point(15, 92);
+            this.minusBtn.Location = new System.Drawing.Point(22, 142);
+            this.minusBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.minusBtn.Name = "minusBtn";
-            this.minusBtn.Size = new System.Drawing.Size(74, 74);
+            this.minusBtn.Size = new System.Drawing.Size(111, 114);
             this.minusBtn.TabIndex = 24;
             this.minusBtn.Text = "-";
             this.minusBtn.UseVisualStyleBackColor = true;
@@ -289,9 +304,10 @@
             this.panel1.Controls.Add(this.threeBtn);
             this.panel1.Controls.Add(this.twoBtn);
             this.panel1.Controls.Add(this.oneBtn);
-            this.panel1.Location = new System.Drawing.Point(0, 355);
+            this.panel1.Location = new System.Drawing.Point(0, 546);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 171);
+            this.panel1.Size = new System.Drawing.Size(600, 263);
             this.panel1.TabIndex = 22;
             // 
             // splitter3
@@ -300,8 +316,9 @@
             this.splitter3.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitter3.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter3.Location = new System.Drawing.Point(0, 0);
+            this.splitter3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter3.Name = "splitter3";
-            this.splitter3.Size = new System.Drawing.Size(400, 3);
+            this.splitter3.Size = new System.Drawing.Size(600, 5);
             this.splitter3.TabIndex = 31;
             this.splitter3.TabStop = false;
             // 
@@ -309,9 +326,10 @@
             // 
             this.zeroBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zeroBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zeroBtn.Location = new System.Drawing.Point(323, 13);
+            this.zeroBtn.Location = new System.Drawing.Point(484, 20);
+            this.zeroBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.zeroBtn.Name = "zeroBtn";
-            this.zeroBtn.Size = new System.Drawing.Size(74, 74);
+            this.zeroBtn.Size = new System.Drawing.Size(111, 114);
             this.zeroBtn.TabIndex = 30;
             this.zeroBtn.Text = "0";
             this.zeroBtn.UseVisualStyleBackColor = true;
@@ -321,9 +339,10 @@
             // 
             this.nineBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nineBtn.Location = new System.Drawing.Point(243, 13);
+            this.nineBtn.Location = new System.Drawing.Point(364, 20);
+            this.nineBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nineBtn.Name = "nineBtn";
-            this.nineBtn.Size = new System.Drawing.Size(74, 74);
+            this.nineBtn.Size = new System.Drawing.Size(111, 114);
             this.nineBtn.TabIndex = 29;
             this.nineBtn.Text = "9";
             this.nineBtn.UseVisualStyleBackColor = true;
@@ -333,9 +352,10 @@
             // 
             this.eightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eightBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eightBtn.Location = new System.Drawing.Point(163, 13);
+            this.eightBtn.Location = new System.Drawing.Point(244, 20);
+            this.eightBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.eightBtn.Name = "eightBtn";
-            this.eightBtn.Size = new System.Drawing.Size(74, 74);
+            this.eightBtn.Size = new System.Drawing.Size(111, 114);
             this.eightBtn.TabIndex = 28;
             this.eightBtn.Text = "8";
             this.eightBtn.UseVisualStyleBackColor = true;
@@ -345,9 +365,10 @@
             // 
             this.sevenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sevenBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sevenBtn.Location = new System.Drawing.Point(83, 13);
+            this.sevenBtn.Location = new System.Drawing.Point(124, 20);
+            this.sevenBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sevenBtn.Name = "sevenBtn";
-            this.sevenBtn.Size = new System.Drawing.Size(74, 74);
+            this.sevenBtn.Size = new System.Drawing.Size(111, 114);
             this.sevenBtn.TabIndex = 27;
             this.sevenBtn.Text = "7";
             this.sevenBtn.UseVisualStyleBackColor = true;
@@ -357,9 +378,10 @@
             // 
             this.sixBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sixBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sixBtn.Location = new System.Drawing.Point(3, 13);
+            this.sixBtn.Location = new System.Drawing.Point(4, 20);
+            this.sixBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sixBtn.Name = "sixBtn";
-            this.sixBtn.Size = new System.Drawing.Size(74, 74);
+            this.sixBtn.Size = new System.Drawing.Size(111, 114);
             this.sixBtn.TabIndex = 26;
             this.sixBtn.Text = "6";
             this.sixBtn.UseVisualStyleBackColor = true;
@@ -369,9 +391,10 @@
             // 
             this.fiveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fiveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fiveBtn.Location = new System.Drawing.Point(323, 93);
+            this.fiveBtn.Location = new System.Drawing.Point(484, 143);
+            this.fiveBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fiveBtn.Name = "fiveBtn";
-            this.fiveBtn.Size = new System.Drawing.Size(74, 74);
+            this.fiveBtn.Size = new System.Drawing.Size(111, 114);
             this.fiveBtn.TabIndex = 25;
             this.fiveBtn.Text = "5";
             this.fiveBtn.UseVisualStyleBackColor = true;
@@ -381,9 +404,10 @@
             // 
             this.fourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fourBtn.Location = new System.Drawing.Point(243, 93);
+            this.fourBtn.Location = new System.Drawing.Point(364, 143);
+            this.fourBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fourBtn.Name = "fourBtn";
-            this.fourBtn.Size = new System.Drawing.Size(74, 74);
+            this.fourBtn.Size = new System.Drawing.Size(111, 114);
             this.fourBtn.TabIndex = 24;
             this.fourBtn.Text = "4";
             this.fourBtn.UseVisualStyleBackColor = true;
@@ -393,9 +417,10 @@
             // 
             this.threeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.threeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.threeBtn.Location = new System.Drawing.Point(163, 93);
+            this.threeBtn.Location = new System.Drawing.Point(244, 143);
+            this.threeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.threeBtn.Name = "threeBtn";
-            this.threeBtn.Size = new System.Drawing.Size(74, 74);
+            this.threeBtn.Size = new System.Drawing.Size(111, 114);
             this.threeBtn.TabIndex = 23;
             this.threeBtn.Text = "3";
             this.threeBtn.UseVisualStyleBackColor = true;
@@ -405,9 +430,10 @@
             // 
             this.twoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.twoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoBtn.Location = new System.Drawing.Point(83, 93);
+            this.twoBtn.Location = new System.Drawing.Point(124, 143);
+            this.twoBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.twoBtn.Name = "twoBtn";
-            this.twoBtn.Size = new System.Drawing.Size(74, 74);
+            this.twoBtn.Size = new System.Drawing.Size(111, 114);
             this.twoBtn.TabIndex = 22;
             this.twoBtn.Text = "2";
             this.twoBtn.UseVisualStyleBackColor = true;
@@ -417,9 +443,10 @@
             // 
             this.oneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oneBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oneBtn.Location = new System.Drawing.Point(3, 93);
+            this.oneBtn.Location = new System.Drawing.Point(4, 143);
+            this.oneBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.oneBtn.Name = "oneBtn";
-            this.oneBtn.Size = new System.Drawing.Size(74, 74);
+            this.oneBtn.Size = new System.Drawing.Size(111, 114);
             this.oneBtn.TabIndex = 21;
             this.oneBtn.Text = "1";
             this.oneBtn.UseVisualStyleBackColor = true;
@@ -430,9 +457,10 @@
             this.trignometricPnl.Controls.Add(this.panel7);
             this.trignometricPnl.Controls.Add(this.panel6);
             this.trignometricPnl.Controls.Add(this.splitter1);
-            this.trignometricPnl.Location = new System.Drawing.Point(417, 259);
+            this.trignometricPnl.Location = new System.Drawing.Point(626, 398);
+            this.trignometricPnl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.trignometricPnl.Name = "trignometricPnl";
-            this.trignometricPnl.Size = new System.Drawing.Size(416, 529);
+            this.trignometricPnl.Size = new System.Drawing.Size(624, 814);
             this.trignometricPnl.TabIndex = 12;
             // 
             // panel7
@@ -450,18 +478,20 @@
             this.panel7.Controls.Add(this.coshBtn);
             this.panel7.Controls.Add(this.splitter7);
             this.panel7.Controls.Add(this.sinhBtn);
-            this.panel7.Location = new System.Drawing.Point(4, 355);
+            this.panel7.Location = new System.Drawing.Point(6, 546);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(412, 171);
+            this.panel7.Size = new System.Drawing.Size(618, 263);
             this.panel7.TabIndex = 46;
             // 
             // cotanhInverseBtn
             // 
             this.cotanhInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cotanhInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cotanhInverseBtn.Location = new System.Drawing.Point(346, 93);
+            this.cotanhInverseBtn.Location = new System.Drawing.Point(519, 143);
+            this.cotanhInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cotanhInverseBtn.Name = "cotanhInverseBtn";
-            this.cotanhInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.cotanhInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.cotanhInverseBtn.TabIndex = 55;
             this.cotanhInverseBtn.Text = "cotanh-1";
             this.cotanhInverseBtn.UseVisualStyleBackColor = true;
@@ -471,9 +501,10 @@
             // 
             this.cosechInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cosechInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cosechInverseBtn.Location = new System.Drawing.Point(278, 93);
+            this.cosechInverseBtn.Location = new System.Drawing.Point(417, 143);
+            this.cosechInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cosechInverseBtn.Name = "cosechInverseBtn";
-            this.cosechInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.cosechInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.cosechInverseBtn.TabIndex = 54;
             this.cosechInverseBtn.Text = "cosech-1";
             this.cosechInverseBtn.UseVisualStyleBackColor = true;
@@ -483,9 +514,10 @@
             // 
             this.sechInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sechInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sechInverseBtn.Location = new System.Drawing.Point(210, 93);
+            this.sechInverseBtn.Location = new System.Drawing.Point(315, 143);
+            this.sechInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sechInverseBtn.Name = "sechInverseBtn";
-            this.sechInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.sechInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.sechInverseBtn.TabIndex = 53;
             this.sechInverseBtn.Text = "sech-1";
             this.sechInverseBtn.UseVisualStyleBackColor = true;
@@ -495,9 +527,10 @@
             // 
             this.tanhInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tanhInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tanhInverseBtn.Location = new System.Drawing.Point(139, 93);
+            this.tanhInverseBtn.Location = new System.Drawing.Point(208, 143);
+            this.tanhInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tanhInverseBtn.Name = "tanhInverseBtn";
-            this.tanhInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.tanhInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.tanhInverseBtn.TabIndex = 52;
             this.tanhInverseBtn.Text = "tanh-1";
             this.tanhInverseBtn.UseVisualStyleBackColor = true;
@@ -507,9 +540,10 @@
             // 
             this.coshInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coshInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coshInverseBtn.Location = new System.Drawing.Point(71, 93);
+            this.coshInverseBtn.Location = new System.Drawing.Point(106, 143);
+            this.coshInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.coshInverseBtn.Name = "coshInverseBtn";
-            this.coshInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.coshInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.coshInverseBtn.TabIndex = 51;
             this.coshInverseBtn.Text = "cosh-1";
             this.coshInverseBtn.UseVisualStyleBackColor = true;
@@ -519,9 +553,10 @@
             // 
             this.sinhInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sinhInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinhInverseBtn.Location = new System.Drawing.Point(6, 93);
+            this.sinhInverseBtn.Location = new System.Drawing.Point(9, 143);
+            this.sinhInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sinhInverseBtn.Name = "sinhInverseBtn";
-            this.sinhInverseBtn.Size = new System.Drawing.Size(62, 74);
+            this.sinhInverseBtn.Size = new System.Drawing.Size(93, 114);
             this.sinhInverseBtn.TabIndex = 50;
             this.sinhInverseBtn.Text = "sinh-1";
             this.sinhInverseBtn.UseVisualStyleBackColor = true;
@@ -531,9 +566,10 @@
             // 
             this.cotanhBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cotanhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cotanhBtn.Location = new System.Drawing.Point(346, 13);
+            this.cotanhBtn.Location = new System.Drawing.Point(519, 20);
+            this.cotanhBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cotanhBtn.Name = "cotanhBtn";
-            this.cotanhBtn.Size = new System.Drawing.Size(62, 74);
+            this.cotanhBtn.Size = new System.Drawing.Size(93, 114);
             this.cotanhBtn.TabIndex = 49;
             this.cotanhBtn.Text = "cotanh";
             this.cotanhBtn.UseVisualStyleBackColor = true;
@@ -543,9 +579,10 @@
             // 
             this.cosechBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cosechBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cosechBtn.Location = new System.Drawing.Point(278, 13);
+            this.cosechBtn.Location = new System.Drawing.Point(417, 20);
+            this.cosechBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cosechBtn.Name = "cosechBtn";
-            this.cosechBtn.Size = new System.Drawing.Size(62, 74);
+            this.cosechBtn.Size = new System.Drawing.Size(93, 114);
             this.cosechBtn.TabIndex = 48;
             this.cosechBtn.Text = "cosech";
             this.cosechBtn.UseVisualStyleBackColor = true;
@@ -555,9 +592,10 @@
             // 
             this.sechBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sechBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sechBtn.Location = new System.Drawing.Point(210, 13);
+            this.sechBtn.Location = new System.Drawing.Point(315, 20);
+            this.sechBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sechBtn.Name = "sechBtn";
-            this.sechBtn.Size = new System.Drawing.Size(62, 74);
+            this.sechBtn.Size = new System.Drawing.Size(93, 114);
             this.sechBtn.TabIndex = 47;
             this.sechBtn.Text = "sech";
             this.sechBtn.UseVisualStyleBackColor = true;
@@ -567,9 +605,10 @@
             // 
             this.tanhBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tanhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tanhBtn.Location = new System.Drawing.Point(139, 13);
+            this.tanhBtn.Location = new System.Drawing.Point(208, 20);
+            this.tanhBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tanhBtn.Name = "tanhBtn";
-            this.tanhBtn.Size = new System.Drawing.Size(62, 74);
+            this.tanhBtn.Size = new System.Drawing.Size(93, 114);
             this.tanhBtn.TabIndex = 46;
             this.tanhBtn.Text = "tanh";
             this.tanhBtn.UseVisualStyleBackColor = true;
@@ -579,9 +618,10 @@
             // 
             this.coshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coshBtn.Location = new System.Drawing.Point(71, 13);
+            this.coshBtn.Location = new System.Drawing.Point(106, 20);
+            this.coshBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.coshBtn.Name = "coshBtn";
-            this.coshBtn.Size = new System.Drawing.Size(62, 74);
+            this.coshBtn.Size = new System.Drawing.Size(93, 114);
             this.coshBtn.TabIndex = 45;
             this.coshBtn.Text = "cosh";
             this.coshBtn.UseVisualStyleBackColor = true;
@@ -592,8 +632,9 @@
             this.splitter7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.splitter7.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter7.Location = new System.Drawing.Point(0, 0);
+            this.splitter7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter7.Name = "splitter7";
-            this.splitter7.Size = new System.Drawing.Size(412, 3);
+            this.splitter7.Size = new System.Drawing.Size(618, 5);
             this.splitter7.TabIndex = 44;
             this.splitter7.TabStop = false;
             // 
@@ -601,9 +642,10 @@
             // 
             this.sinhBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sinhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinhBtn.Location = new System.Drawing.Point(3, 13);
+            this.sinhBtn.Location = new System.Drawing.Point(4, 20);
+            this.sinhBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sinhBtn.Name = "sinhBtn";
-            this.sinhBtn.Size = new System.Drawing.Size(62, 74);
+            this.sinhBtn.Size = new System.Drawing.Size(93, 114);
             this.sinhBtn.TabIndex = 33;
             this.sinhBtn.Text = "sinh";
             this.sinhBtn.UseVisualStyleBackColor = true;
@@ -617,18 +659,20 @@
             this.panel6.Controls.Add(this.secBtn);
             this.panel6.Controls.Add(this.cotanInverseBtn);
             this.panel6.Controls.Add(this.secInverseBtn);
-            this.panel6.Location = new System.Drawing.Point(4, 183);
+            this.panel6.Location = new System.Drawing.Point(6, 282);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(412, 166);
+            this.panel6.Size = new System.Drawing.Size(618, 255);
             this.panel6.TabIndex = 45;
             // 
             // cosecInverseBtn
             // 
             this.cosecInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cosecInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cosecInverseBtn.Location = new System.Drawing.Point(143, 80);
+            this.cosecInverseBtn.Location = new System.Drawing.Point(214, 123);
+            this.cosecInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cosecInverseBtn.Name = "cosecInverseBtn";
-            this.cosecInverseBtn.Size = new System.Drawing.Size(131, 74);
+            this.cosecInverseBtn.Size = new System.Drawing.Size(196, 114);
             this.cosecInverseBtn.TabIndex = 33;
             this.cosecInverseBtn.Text = "cosec-1";
             this.cosecInverseBtn.UseVisualStyleBackColor = true;
@@ -638,9 +682,10 @@
             // 
             this.cotanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cotanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cotanBtn.Location = new System.Drawing.Point(278, 4);
+            this.cotanBtn.Location = new System.Drawing.Point(417, 6);
+            this.cotanBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cotanBtn.Name = "cotanBtn";
-            this.cotanBtn.Size = new System.Drawing.Size(131, 74);
+            this.cotanBtn.Size = new System.Drawing.Size(196, 114);
             this.cotanBtn.TabIndex = 35;
             this.cotanBtn.Text = "cotan";
             this.cotanBtn.UseVisualStyleBackColor = true;
@@ -650,9 +695,10 @@
             // 
             this.cosecBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cosecBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cosecBtn.Location = new System.Drawing.Point(143, 4);
+            this.cosecBtn.Location = new System.Drawing.Point(214, 6);
+            this.cosecBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cosecBtn.Name = "cosecBtn";
-            this.cosecBtn.Size = new System.Drawing.Size(131, 74);
+            this.cosecBtn.Size = new System.Drawing.Size(196, 114);
             this.cosecBtn.TabIndex = 33;
             this.cosecBtn.Text = "cosec";
             this.cosecBtn.UseVisualStyleBackColor = true;
@@ -662,9 +708,10 @@
             // 
             this.secBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secBtn.Location = new System.Drawing.Point(6, 4);
+            this.secBtn.Location = new System.Drawing.Point(9, 6);
+            this.secBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.secBtn.Name = "secBtn";
-            this.secBtn.Size = new System.Drawing.Size(131, 74);
+            this.secBtn.Size = new System.Drawing.Size(196, 114);
             this.secBtn.TabIndex = 33;
             this.secBtn.Text = "sec";
             this.secBtn.UseVisualStyleBackColor = true;
@@ -674,9 +721,10 @@
             // 
             this.cotanInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cotanInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cotanInverseBtn.Location = new System.Drawing.Point(278, 80);
+            this.cotanInverseBtn.Location = new System.Drawing.Point(417, 123);
+            this.cotanInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cotanInverseBtn.Name = "cotanInverseBtn";
-            this.cotanInverseBtn.Size = new System.Drawing.Size(131, 74);
+            this.cotanInverseBtn.Size = new System.Drawing.Size(196, 114);
             this.cotanInverseBtn.TabIndex = 34;
             this.cotanInverseBtn.Text = "cotan-1";
             this.cotanInverseBtn.UseVisualStyleBackColor = true;
@@ -686,9 +734,10 @@
             // 
             this.secInverseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.secInverseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secInverseBtn.Location = new System.Drawing.Point(6, 80);
+            this.secInverseBtn.Location = new System.Drawing.Point(9, 123);
+            this.secInverseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.secInverseBtn.Name = "secInverseBtn";
-            this.secInverseBtn.Size = new System.Drawing.Size(131, 74);
+            this.secInverseBtn.Size = new System.Drawing.Size(196, 114);
             this.secInverseBtn.TabIndex = 32;
             this.secInverseBtn.Text = "sec-1";
             this.secInverseBtn.UseVisualStyleBackColor = true;
@@ -698,8 +747,9 @@
             // 
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 529);
+            this.splitter1.Size = new System.Drawing.Size(4, 814);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
@@ -712,17 +762,97 @@
             this.logsAndExponentsPnl.Controls.Add(this.power3Btn);
             this.logsAndExponentsPnl.Controls.Add(this.power2Btn);
             this.logsAndExponentsPnl.Controls.Add(this.splitter2);
-            this.logsAndExponentsPnl.Location = new System.Drawing.Point(838, 259);
+            this.logsAndExponentsPnl.Location = new System.Drawing.Point(1257, 398);
+            this.logsAndExponentsPnl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logsAndExponentsPnl.Name = "logsAndExponentsPnl";
-            this.logsAndExponentsPnl.Size = new System.Drawing.Size(400, 529);
+            this.logsAndExponentsPnl.Size = new System.Drawing.Size(600, 814);
             this.logsAndExponentsPnl.TabIndex = 12;
+            // 
+            // squareRoot
+            // 
+            this.squareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.squareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.squareRoot.Location = new System.Drawing.Point(18, 411);
+            this.squareRoot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.squareRoot.Name = "squareRoot";
+            this.squareRoot.Size = new System.Drawing.Size(582, 126);
+            this.squareRoot.TabIndex = 50;
+            this.squareRoot.Text = "Square Root";
+            this.squareRoot.UseVisualStyleBackColor = true;
+            this.squareRoot.Click += new System.EventHandler(this.squareRoot_Click);
+            // 
+            // power
+            // 
+            this.power.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.power.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.power.Location = new System.Drawing.Point(18, 283);
+            this.power.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.power.Name = "power";
+            this.power.Size = new System.Drawing.Size(582, 126);
+            this.power.TabIndex = 49;
+            this.power.Text = "^";
+            this.power.UseVisualStyleBackColor = true;
+            this.power.Click += new System.EventHandler(this.power_Click);
+            // 
+            // lnBtn
+            // 
+            this.lnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnBtn.Location = new System.Drawing.Point(18, 682);
+            this.lnBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lnBtn.Name = "lnBtn";
+            this.lnBtn.Size = new System.Drawing.Size(582, 126);
+            this.lnBtn.TabIndex = 48;
+            this.lnBtn.Text = "Ln";
+            this.lnBtn.UseVisualStyleBackColor = true;
+            this.lnBtn.Click += new System.EventHandler(this.lnBtn_Click);
+            // 
+            // logBtn
+            // 
+            this.logBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logBtn.Location = new System.Drawing.Point(18, 546);
+            this.logBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.logBtn.Name = "logBtn";
+            this.logBtn.Size = new System.Drawing.Size(582, 126);
+            this.logBtn.TabIndex = 47;
+            this.logBtn.Text = "Log";
+            this.logBtn.UseVisualStyleBackColor = true;
+            this.logBtn.Click += new System.EventHandler(this.logBtn_Click);
+            // 
+            // power3Btn
+            // 
+            this.power3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.power3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.power3Btn.Location = new System.Drawing.Point(18, 149);
+            this.power3Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.power3Btn.Name = "power3Btn";
+            this.power3Btn.Size = new System.Drawing.Size(582, 126);
+            this.power3Btn.TabIndex = 46;
+            this.power3Btn.Text = "^3";
+            this.power3Btn.UseVisualStyleBackColor = true;
+            this.power3Btn.Click += new System.EventHandler(this.power3Btn_Click);
+            // 
+            // power2Btn
+            // 
+            this.power2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.power2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.power2Btn.Location = new System.Drawing.Point(18, 9);
+            this.power2Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.power2Btn.Name = "power2Btn";
+            this.power2Btn.Size = new System.Drawing.Size(582, 126);
+            this.power2Btn.TabIndex = 45;
+            this.power2Btn.Text = "^2";
+            this.power2Btn.UseVisualStyleBackColor = true;
+            this.power2Btn.Click += new System.EventHandler(this.power2Btn_Click);
             // 
             // splitter2
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.splitter2.Location = new System.Drawing.Point(0, 0);
+            this.splitter2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(3, 529);
+            this.splitter2.Size = new System.Drawing.Size(4, 814);
             this.splitter2.TabIndex = 0;
             this.splitter2.TabStop = false;
             // 
@@ -734,8 +864,9 @@
             this.panel3.Controls.Add(this.closeBtn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1250, 76);
+            this.panel3.Size = new System.Drawing.Size(1875, 117);
             this.panel3.TabIndex = 13;
             // 
             // homeBtn
@@ -745,10 +876,9 @@
             this.homeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.White;
             this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
-            this.homeBtn.Location = new System.Drawing.Point(2, 3);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.homeBtn.Location = new System.Drawing.Point(3, 5);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(93, 70);
+            this.homeBtn.Size = new System.Drawing.Size(140, 108);
             this.homeBtn.TabIndex = 6;
             this.homeBtn.Text = "Home";
             this.homeBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -760,9 +890,10 @@
             // 
             this.mainTxt.AutoSize = true;
             this.mainTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainTxt.Location = new System.Drawing.Point(100, 3);
+            this.mainTxt.Location = new System.Drawing.Point(150, 5);
+            this.mainTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mainTxt.Name = "mainTxt";
-            this.mainTxt.Size = new System.Drawing.Size(323, 73);
+            this.mainTxt.Size = new System.Drawing.Size(476, 108);
             this.mainTxt.TabIndex = 3;
             this.mainTxt.Text = "Aritmetics";
             // 
@@ -771,9 +902,10 @@
             this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeBtn.Location = new System.Drawing.Point(1193, 12);
+            this.closeBtn.Location = new System.Drawing.Point(1790, 18);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(45, 26);
+            this.closeBtn.Size = new System.Drawing.Size(68, 40);
             this.closeBtn.TabIndex = 5;
             this.closeBtn.Text = " X ";
             this.closeBtn.UseVisualStyleBackColor = false;
@@ -782,9 +914,10 @@
             // eqnTxtBox
             // 
             this.eqnTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eqnTxtBox.Location = new System.Drawing.Point(12, 120);
+            this.eqnTxtBox.Location = new System.Drawing.Point(18, 185);
+            this.eqnTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.eqnTxtBox.Name = "eqnTxtBox";
-            this.eqnTxtBox.Size = new System.Drawing.Size(1226, 44);
+            this.eqnTxtBox.Size = new System.Drawing.Size(1837, 62);
             this.eqnTxtBox.TabIndex = 14;
             // 
             // panel5
@@ -796,18 +929,20 @@
             this.panel5.Controls.Add(this.sinBtn);
             this.panel5.Controls.Add(this.atanBtn);
             this.panel5.Controls.Add(this.asinBtn);
-            this.panel5.Location = new System.Drawing.Point(421, 251);
+            this.panel5.Location = new System.Drawing.Point(632, 386);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(412, 174);
+            this.panel5.Size = new System.Drawing.Size(618, 268);
             this.panel5.TabIndex = 1;
             // 
             // splitter5
             // 
             this.splitter5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.splitter5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter5.Location = new System.Drawing.Point(0, 171);
+            this.splitter5.Location = new System.Drawing.Point(0, 263);
+            this.splitter5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitter5.Name = "splitter5";
-            this.splitter5.Size = new System.Drawing.Size(412, 3);
+            this.splitter5.Size = new System.Drawing.Size(618, 5);
             this.splitter5.TabIndex = 44;
             this.splitter5.TabStop = false;
             // 
@@ -815,9 +950,10 @@
             // 
             this.acosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.acosBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acosBtn.Location = new System.Drawing.Point(143, 94);
+            this.acosBtn.Location = new System.Drawing.Point(214, 145);
+            this.acosBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.acosBtn.Name = "acosBtn";
-            this.acosBtn.Size = new System.Drawing.Size(131, 74);
+            this.acosBtn.Size = new System.Drawing.Size(196, 114);
             this.acosBtn.TabIndex = 33;
             this.acosBtn.Text = "cos-1";
             this.acosBtn.UseVisualStyleBackColor = true;
@@ -827,9 +963,10 @@
             // 
             this.tanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tanBtn.Location = new System.Drawing.Point(278, 18);
+            this.tanBtn.Location = new System.Drawing.Point(417, 28);
+            this.tanBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tanBtn.Name = "tanBtn";
-            this.tanBtn.Size = new System.Drawing.Size(131, 74);
+            this.tanBtn.Size = new System.Drawing.Size(196, 114);
             this.tanBtn.TabIndex = 35;
             this.tanBtn.Text = "tan";
             this.tanBtn.UseVisualStyleBackColor = true;
@@ -839,9 +976,10 @@
             // 
             this.cosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cosBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cosBtn.Location = new System.Drawing.Point(143, 18);
+            this.cosBtn.Location = new System.Drawing.Point(214, 28);
+            this.cosBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cosBtn.Name = "cosBtn";
-            this.cosBtn.Size = new System.Drawing.Size(131, 74);
+            this.cosBtn.Size = new System.Drawing.Size(196, 114);
             this.cosBtn.TabIndex = 33;
             this.cosBtn.Text = "cos";
             this.cosBtn.UseVisualStyleBackColor = true;
@@ -851,9 +989,10 @@
             // 
             this.sinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinBtn.Location = new System.Drawing.Point(6, 18);
+            this.sinBtn.Location = new System.Drawing.Point(9, 28);
+            this.sinBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sinBtn.Name = "sinBtn";
-            this.sinBtn.Size = new System.Drawing.Size(131, 74);
+            this.sinBtn.Size = new System.Drawing.Size(196, 114);
             this.sinBtn.TabIndex = 33;
             this.sinBtn.Text = "sin";
             this.sinBtn.UseVisualStyleBackColor = true;
@@ -863,9 +1002,10 @@
             // 
             this.atanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.atanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.atanBtn.Location = new System.Drawing.Point(278, 94);
+            this.atanBtn.Location = new System.Drawing.Point(417, 145);
+            this.atanBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.atanBtn.Name = "atanBtn";
-            this.atanBtn.Size = new System.Drawing.Size(131, 74);
+            this.atanBtn.Size = new System.Drawing.Size(196, 114);
             this.atanBtn.TabIndex = 34;
             this.atanBtn.Text = "tan-1";
             this.atanBtn.UseVisualStyleBackColor = true;
@@ -875,92 +1015,36 @@
             // 
             this.asinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.asinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asinBtn.Location = new System.Drawing.Point(6, 94);
+            this.asinBtn.Location = new System.Drawing.Point(9, 145);
+            this.asinBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.asinBtn.Name = "asinBtn";
-            this.asinBtn.Size = new System.Drawing.Size(131, 74);
+            this.asinBtn.Size = new System.Drawing.Size(196, 114);
             this.asinBtn.TabIndex = 32;
             this.asinBtn.Text = "sin-1";
             this.asinBtn.UseVisualStyleBackColor = true;
             this.asinBtn.Click += new System.EventHandler(this.asinBtn_Click);
             // 
-            // power2Btn
+            // historyBtn
             // 
-            this.power2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.power2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.power2Btn.Location = new System.Drawing.Point(12, 6);
-            this.power2Btn.Name = "power2Btn";
-            this.power2Btn.Size = new System.Drawing.Size(388, 82);
-            this.power2Btn.TabIndex = 45;
-            this.power2Btn.Text = "^2";
-            this.power2Btn.UseVisualStyleBackColor = true;
-            this.power2Btn.Click += new System.EventHandler(this.power2Btn_Click);
+            this.historyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.historyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyBtn.Location = new System.Drawing.Point(18, 271);
+            this.historyBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.historyBtn.Name = "historyBtn";
+            this.historyBtn.Size = new System.Drawing.Size(407, 108);
+            this.historyBtn.TabIndex = 44;
+            this.historyBtn.Text = "SHOW HISTORY";
+            this.historyBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.historyBtn.UseVisualStyleBackColor = true;
+            this.historyBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // power3Btn
+            // ArithmeticForm
             // 
-            this.power3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.power3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.power3Btn.Location = new System.Drawing.Point(12, 97);
-            this.power3Btn.Name = "power3Btn";
-            this.power3Btn.Size = new System.Drawing.Size(388, 82);
-            this.power3Btn.TabIndex = 46;
-            this.power3Btn.Text = "^3";
-            this.power3Btn.UseVisualStyleBackColor = true;
-            this.power3Btn.Click += new System.EventHandler(this.power3Btn_Click);
-            // 
-            // logBtn
-            // 
-            this.logBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logBtn.Location = new System.Drawing.Point(12, 355);
-            this.logBtn.Name = "logBtn";
-            this.logBtn.Size = new System.Drawing.Size(388, 82);
-            this.logBtn.TabIndex = 47;
-            this.logBtn.Text = "Log";
-            this.logBtn.UseVisualStyleBackColor = true;
-            this.logBtn.Click += new System.EventHandler(this.logBtn_Click);
-            // 
-            // lnBtn
-            // 
-            this.lnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnBtn.Location = new System.Drawing.Point(12, 443);
-            this.lnBtn.Name = "lnBtn";
-            this.lnBtn.Size = new System.Drawing.Size(388, 82);
-            this.lnBtn.TabIndex = 48;
-            this.lnBtn.Text = "Ln";
-            this.lnBtn.UseVisualStyleBackColor = true;
-            this.lnBtn.Click += new System.EventHandler(this.lnBtn_Click);
-            // 
-            // power
-            // 
-            this.power.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.power.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.power.Location = new System.Drawing.Point(12, 184);
-            this.power.Name = "power";
-            this.power.Size = new System.Drawing.Size(388, 82);
-            this.power.TabIndex = 49;
-            this.power.Text = "^";
-            this.power.UseVisualStyleBackColor = true;
-            this.power.Click += new System.EventHandler(this.power_Click);
-            // 
-            // squareRoot
-            // 
-            this.squareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.squareRoot.Location = new System.Drawing.Point(12, 267);
-            this.squareRoot.Name = "squareRoot";
-            this.squareRoot.Size = new System.Drawing.Size(388, 82);
-            this.squareRoot.TabIndex = 50;
-            this.squareRoot.Text = "Square Root";
-            this.squareRoot.UseVisualStyleBackColor = true;
-            this.squareRoot.Click += new System.EventHandler(this.squareRoot_Click);
-            // 
-            // Arithmetic
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1250, 800);
+            this.ClientSize = new System.Drawing.Size(1875, 1106);
+            this.Controls.Add(this.historyBtn);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.eqnTxtBox);
             this.Controls.Add(this.panel3);
@@ -969,7 +1053,8 @@
             this.Controls.Add(this.aritmeticsPnl);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Arithmetic";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "ArithmeticForm";
             this.Text = "Arithmetic";
             this.Load += new System.EventHandler(this.Arithmetic_Load);
             this.aritmeticsPnl.ResumeLayout(false);
@@ -1059,5 +1144,6 @@
         private System.Windows.Forms.Button logBtn;
         private System.Windows.Forms.Button power3Btn;
         private System.Windows.Forms.Button power2Btn;
+        private System.Windows.Forms.Button historyBtn;
     }
 }

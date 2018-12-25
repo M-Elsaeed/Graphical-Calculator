@@ -8,9 +8,10 @@ namespace DarkDemo
         public static Home home;
 
         //Define Controllers
-        public static MatrixContoller      matrixContoller;
-        public static GraphController      graphController;
-        public static CalculusController   calculusController;
+        public static MatrixContoller matrixContoller;
+        public static GraphController graphController;
+        public static HistoryController historyController;
+        public static CalculusController calculusController;
         public static ArithmeticController arithmeticController;
 
         [STAThread]
@@ -21,9 +22,10 @@ namespace DarkDemo
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Initialize Controllers
-            matrixContoller      = new MatrixContoller();
-            graphController      = new GraphController();
-            calculusController   = new CalculusController();
+            matrixContoller = new MatrixContoller();
+            graphController = new GraphController();
+            historyController = new HistoryController();
+            calculusController = new CalculusController();
             arithmeticController = new ArithmeticController();
 
             //Load Main Form
