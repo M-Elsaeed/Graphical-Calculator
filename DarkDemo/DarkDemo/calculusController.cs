@@ -8,26 +8,21 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    class CalculusController
+    class CalculusController:Controller
     {
         public CalculusForm calculusForm;
 
-        public void showForm()
+        override public void showForm()
         {
-            Program.home.Hide();
+            hideHome();
             calculusForm = new CalculusForm();
             calculusForm.Show();
         }
 
-        public void closeForm()
+        override public void closeForm()
         {
             calculusForm.Close();
-            Program.home.Show();
-        }
-
-        public void closeApplication()
-        {
-            Application.Exit();
+            showHome();
         }
 
         public void Differentiate(TextBox eqnTextBox,TextBox limitTxtBox,Label resultLbl)

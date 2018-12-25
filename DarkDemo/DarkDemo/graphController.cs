@@ -5,27 +5,23 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    class GraphController
+    class GraphController : Controller
     {
         public GraphForm graphForm;
 
-        public void showForm()
+        override public void showForm()
         {
-            Program.home.Hide();
+            hideHome();
             graphForm = new GraphForm();
             graphForm.Show();
         }
 
-        public void closeForm()
+        override public void closeForm()
         {
             graphForm.Close();
-            Program.home.Show();
+            showHome();
         }
 
-        public void closeApplication()
-        {
-            Application.Exit();
-        }
         public void drawGraph(Panel graphPnl, TextBox fromText, TextBox toText, TextBox eqnText)
         {
 

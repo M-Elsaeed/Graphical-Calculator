@@ -69,6 +69,7 @@
       <DependentUpon>CalculusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CalculusController.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="ExponentialForm.cs">
       <SubType>Form</SubType>
     </Compile>

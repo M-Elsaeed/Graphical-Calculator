@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace DarkDemo
 {
-    public class MatrixContoller
+    public class MatrixContoller : Controller
     {
         public MatrixForm matrixForm;
 
@@ -22,24 +22,18 @@ namespace DarkDemo
 
         int counter = 0;
 
-        public void showForm()
+        override public void showForm()
         {
-            Program.home.Hide();
+            hideHome();
             matrixForm = new MatrixForm();
             matrixForm.Show();
             reset();
         }
-
-        public void closeForm()
+        override public void closeForm()
         {
             matrixForm.Close();
-            Program.home.Show();
+            showHome();
             reset();
-        }
-
-        public void closeApplication()
-        {
-            Application.Exit();
         }
 
         public void reset()

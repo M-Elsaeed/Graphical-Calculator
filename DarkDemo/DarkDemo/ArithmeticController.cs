@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DarkDemo
 {
-    class ArithmeticController
+    class ArithmeticController : Controller
     {
         public ArithmaticTrignometryForm arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         public ExponentialForm exponentialForm = new ExponentialForm();
@@ -22,22 +22,17 @@ namespace DarkDemo
             arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         }
 
-        public void showForm()
+        override public void showForm()
         {
-            Program.home.Hide();
+            hideHome();
             arithmetic = new ArithmeticForm();
             arithmetic.Show();
         }
 
-        public void closeForm()
+        override public void closeForm()
         {
             arithmetic.Close();
-            Program.home.Show();
-        }
-
-        public void closeApplication()
-        {
-            Application.Exit();
+            showHome();
         }
 
         public void writeSimpleArithmatic(Button button, TextBox equationTxtBox)
