@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArithmaticTrignometryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArithmaticTrignometryForm.Designer.cs">
+      <DependentUpon>ArithmaticTrignometryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Arithmetic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
       <DependentUpon>CalculusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="calculusController.cs" />
+    <Compile Include="ExponentialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExponentialForm.Designer.cs">
+      <DependentUpon>ExponentialForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="graphController.cs" />
     <Compile Include="Graph.cs">
       <SubType>Form</SubType>
@@ -85,11 +97,17 @@
     <Compile Include="matrixContoller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ArithmaticTrignometryForm.resx">
+      <DependentUpon>ArithmaticTrignometryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Arithmetic.resx">
       <DependentUpon>Arithmetic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculusForm.resx">
       <DependentUpon>CalculusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExponentialForm.resx">
+      <DependentUpon>ExponentialForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graph.resx">
       <DependentUpon>Graph.cs</DependentUpon>
