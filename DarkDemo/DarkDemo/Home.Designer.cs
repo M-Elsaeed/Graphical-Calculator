@@ -75,6 +75,7 @@
             this.arithmeticBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.arithmeticBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.arithmeticBtn.UseVisualStyleBackColor = true;
+            this.arithmeticBtn.Click += new System.EventHandler(this.arithmeticBtn_Click);
             // 
             // closeBtn
             // 

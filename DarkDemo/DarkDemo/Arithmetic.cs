@@ -21,5 +21,20 @@ namespace DarkDemo
         {
 
         }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            Program.arithmeticController.closeApplication();
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            Program.arithmeticController.closeForm();
+        }
+
+        private void Arithmetic_Load(object sender, EventArgs e)
+        {
+            this.Location = new System.Drawing.Point(200, 100);
+        }
     }
 }

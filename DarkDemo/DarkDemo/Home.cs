@@ -35,5 +35,10 @@ namespace DarkDemo
         {
             this.Location=new System.Drawing.Point(200,100);
         }
+
+        private void arithmeticBtn_Click(object sender, EventArgs e)
+        {
+            Program.arithmeticController.showForm();
+        }
     }
 }
