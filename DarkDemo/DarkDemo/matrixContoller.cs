@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace DarkDemo
 {
-    public class matrixContoller
+    public class MatrixContoller
     {
         public MatrixForm matrixForm;
 

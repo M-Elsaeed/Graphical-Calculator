@@ -55,32 +55,32 @@
     <Compile Include="ArithmaticTrignometryForm.Designer.cs">
       <DependentUpon>ArithmaticTrignometryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Arithmetic.cs">
+    <Compile Include="ArithmeticForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Arithmetic.Designer.cs">
-      <DependentUpon>Arithmetic.cs</DependentUpon>
+    <Compile Include="ArithmeticForm.Designer.cs">
+      <DependentUpon>ArithmeticForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="arithmeticController.cs" />
+    <Compile Include="ArithmeticController.cs" />
     <Compile Include="CalculusForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalculusForm.Designer.cs">
       <DependentUpon>CalculusForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="calculusController.cs" />
+    <Compile Include="CalculusController.cs" />
     <Compile Include="ExponentialForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExponentialForm.Designer.cs">
       <DependentUpon>ExponentialForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="graphController.cs" />
-    <Compile Include="Graph.cs">
+    <Compile Include="GraphController.cs" />
+    <Compile Include="GraphForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Graph.Designer.cs">
-      <DependentUpon>Graph.cs</DependentUpon>
+    <Compile Include="GraphForm.Designer.cs">
+      <DependentUpon>GraphForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -94,14 +94,14 @@
     <Compile Include="MatrixForm.Designer.cs">
       <DependentUpon>MatrixForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="matrixContoller.cs" />
+    <Compile Include="MatrixContoller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ArithmaticTrignometryForm.resx">
       <DependentUpon>ArithmaticTrignometryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Arithmetic.resx">
-      <DependentUpon>Arithmetic.cs</DependentUpon>
+    <EmbeddedResource Include="ArithmeticForm.resx">
+      <DependentUpon>ArithmeticForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculusForm.resx">
       <DependentUpon>CalculusForm.cs</DependentUpon>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="ExponentialForm.resx">
       <DependentUpon>ExponentialForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Graph.resx">
-      <DependentUpon>Graph.cs</DependentUpon>
+    <EmbeddedResource Include="GraphForm.resx">
+      <DependentUpon>GraphForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

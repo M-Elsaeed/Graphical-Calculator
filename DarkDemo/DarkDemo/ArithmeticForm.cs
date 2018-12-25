@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DarkDemo
 {
-    public partial class Arithmetic : Form
+    public partial class ArithmeticForm : Form
     {
-        public Arithmetic()
+        public ArithmeticForm()
         {
             InitializeComponent();
             this.eqnTxtBox.Enabled = false;

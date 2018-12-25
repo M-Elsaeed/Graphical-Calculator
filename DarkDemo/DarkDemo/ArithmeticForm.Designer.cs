@@ -1,6 +1,6 @@
 ﻿namespace DarkDemo
 {
-    partial class Arithmetic
+    partial class ArithmeticForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Arithmetic));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArithmeticForm));
             this.aritmeticsPnl = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.splitter4 = new System.Windows.Forms.Splitter();

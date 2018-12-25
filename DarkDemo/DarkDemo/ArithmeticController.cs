@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace DarkDemo
 {
-    class arithmeticController
+    class ArithmeticController
     {
         public ArithmaticTrignometryForm arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         public ExponentialForm exponentialForm = new ExponentialForm();
-        public Arithmetic arithmetic;
+        public ArithmeticForm arithmetic;
         public string angle  = "";
         public string number = "";
         string eqnToEvaluate = "";
 
-        public arithmeticController()
+        public ArithmeticController()
         {
             arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         }
@@ -25,7 +25,7 @@ namespace DarkDemo
         public void showForm()
         {
             Program.home.Hide();
-            arithmetic = new Arithmetic();
+            arithmetic = new ArithmeticForm();
             arithmetic.Show();
         }
 
