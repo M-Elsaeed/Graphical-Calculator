@@ -10,10 +10,10 @@ namespace DarkDemo
         public MatrixForm matrixForm;
 
         List<List<TextBox>> textboxes;
-        List<List<int>> matrix;
-        List<List<int>> matrix1;
-        List<List<int>> matrix2;
-        List<List<int>> matrix3;
+        Matrix matrix;
+        Matrix matrix1;
+        Matrix matrix2;
+        Matrix matrix3;
 
         int rowM1 = 0;
         int columnM1 = 0;
@@ -84,20 +84,21 @@ namespace DarkDemo
 
         public void saveMatrix(int column, int row, Form form, Button makeMatrixBtn, Button plusBtn, Button minusBtn, Button multiplyBtn, Button saveBtn,TextBox columnTxtBox, TextBox rowTxtBox,Button transposeBtn)
         {
-            matrix = new List<List<int>>();
+            matrix = new Matrix();
             for (int i = 0; i < row; i++)
             {
-                matrix.Add(new List<int>());
+                matrix.values.Add(new List<int>());
                 for (int j = 0; j < column; j++)
                 {
-                    matrix[i].Add(new int());
-                    matrix[i][j] = Convert.ToInt16(textboxes[i][j].Text);
+                    matrix.values[i].Add(new int());
+                    matrix.values[i][j] = Convert.ToInt16(textboxes[i][j].Text);
                 }
             }
 
             if (counter == 1)
             {
-                matrix1 = new List<List<int>>(matrix);
+                matrix1 = new Matrix();
+                matrix1.values = matrix.values;
                 makeMatrixBtn.Enabled = true;
                 transposeBtn.Enabled = true;
                 rowM1 = row;
@@ -105,7 +106,8 @@ namespace DarkDemo
             }
             else if(counter == 2)
             {
-                matrix2 = new List<List<int>>(matrix);
+                matrix2 = new Matrix();
+                matrix2.values = matrix.values;
                 makeMatrixBtn.Enabled = false;
                 rowM2 = row;
                 columnM2 = column;
@@ -137,12 +139,13 @@ namespace DarkDemo
 
         public void matrixAddition(Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
-            matrix3 = new List<List<int>>(matrix);
+            matrix3 = new Matrix();
+            matrix3.values = matrix.values;
             for (int i = 0; i < rowM1; i++)
             {
                 for (int j = 0; j < columnM2; j++)
                 {
-                    matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+                    matrix3.values[i][j] = matrix1.values[i][j] + matrix2.values[i][j];
                 }
             }
 
@@ -152,7 +155,7 @@ namespace DarkDemo
             {
                 for (int j = 0; j < columnM2; j++)
                 {
-                    textboxes[i][j].Text = matrix3[i][j] + "";
+                    textboxes[i][j].Text = matrix3.values[i][j] + "";
                 }
             }
 
@@ -161,12 +164,13 @@ namespace DarkDemo
 
         public void matrixSubtraction(Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
-            matrix3 = new List<List<int>>(matrix);
+            matrix3 = new Matrix();
+            matrix3.values = matrix.values;
             for (int i = 0; i < rowM1; i++)
             {
                 for (int j = 0; j < columnM2; j++)
                 {
-                    matrix3[i][j] = matrix1[i][j] - matrix2[i][j];
+                    matrix3.values[i][j] = matrix1.values[i][j] - matrix2.values[i][j];
                 }
             }
 
@@ -176,7 +180,7 @@ namespace DarkDemo
             {
                 for (int j = 0; j < columnM1; j++)
                 {
-                    textboxes[i][j].Text = matrix3[i][j] + "";
+                    textboxes[i][j].Text = matrix3.values[i][j] + "";
                 }
             }
             saveBtn.Enabled = false;
@@ -184,25 +188,26 @@ namespace DarkDemo
 
         public void matrixMultiplication(Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
-            matrix = new List<List<int>>();
+            matrix = new Matrix();
             for (int i = 0; i < rowM1; i++)
             {
-                matrix.Add(new List<int>());
+                matrix.values.Add(new List<int>());
                 for (int j = 0; j < columnM2; j++)
                 {
-                    matrix[i].Add(new int());
-                    matrix[i][j] = 0;
+                    matrix.values[i].Add(new int());
+                    matrix.values[i][j] = 0;
                 }
             }
 
-            matrix3 = new List<List<int>>(matrix);
+            matrix3 = new Matrix();
+            matrix3.values = matrix.values;
             for (int i = 0; i < rowM1; ++i)
             {
                 for (int j = 0; j < columnM2; ++j)
                 {
                     for (int k = 0; k < columnM1; ++k)
                     {
-                        matrix3[i][j] += matrix1[i][k] * matrix2[k][j];
+                        matrix3.values[i][j] += matrix1.values[i][k] * matrix2.values[k][j];
                     }
                 }
                     
@@ -214,7 +219,7 @@ namespace DarkDemo
             {
                 for (int j = 0; j < columnM2; j++)
                 {
-                    textboxes[i][j].Text = matrix3[i][j] + "";
+                    textboxes[i][j].Text = matrix3.values[i][j] + "";
                 }
             }
             saveBtn.Enabled = false;
@@ -222,23 +227,24 @@ namespace DarkDemo
 
         public void transpose(Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
-            matrix = new List<List<int>>();
+            matrix = new Matrix();
             for (int i = 0; i < columnM1; i++)
             {
-                matrix.Add(new List<int>());
+                matrix.values.Add(new List<int>());
                 for (int j = 0; j < rowM1; j++)
                 {
-                    matrix[i].Add(new int());
-                    matrix[i][j] = 0;
+                    matrix.values[i].Add(new int());
+                    matrix.values[i][j] = 0;
                 }
             }
 
-            matrix3 = new List<List<int>>(matrix);
+            matrix3 = new Matrix();
+            matrix3.values = matrix.values;
             for (int i = 0; i < columnM1; i++)
             {
                 for (int j = 0; j < rowM1; j++)
                 {
-                    matrix3[i][j] = matrix1[j][i];
+                    matrix3.values[i][j] = matrix1.values[j][i];
                 }
             }
 
@@ -249,7 +255,7 @@ namespace DarkDemo
             {
                 for (int j = 0; j < rowM1; j++)
                 {
-                    textboxes[i][j].Text = matrix3[i][j] + "";
+                    textboxes[i][j].Text = matrix3.values[i][j] + "";
                 }
             }
             saveBtn.Enabled = false;

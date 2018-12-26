@@ -97,6 +97,7 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Matrix.cs" />
     <Compile Include="MatrixForm.cs">
       <SubType>Form</SubType>
     </Compile>
