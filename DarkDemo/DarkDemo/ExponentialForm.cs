@@ -19,7 +19,7 @@ namespace DarkDemo
 
         private void donebtn_Click_1(object sender, EventArgs e)
         {
-            Program.arithmeticController.number = angleTxtBox.Text;
+            ArithmeticController.number = angleTxtBox.Text;
             this.Close();
         }
 

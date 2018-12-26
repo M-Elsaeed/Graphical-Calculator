@@ -4,7 +4,6 @@ namespace DarkDemo
 {
     abstract public class Controller
     {
-        Form form;
         abstract public void showForm();
         abstract public void closeForm();
         public void closeApplication()
@@ -19,13 +18,5 @@ namespace DarkDemo
         {
             Program.home.Hide();
         }
-        //public void showForm()
-        //{
-        //    form.Show();
-        //}
-        //public void closeForm()
-        //{
-        //    form.Close();
-        //}
     }
 }

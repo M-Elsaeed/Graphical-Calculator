@@ -70,6 +70,7 @@
     </Compile>
     <Compile Include="CalculusController.cs" />
     <Compile Include="Controller.cs" />
+    <Compile Include="ExponentialController.cs" />
     <Compile Include="ExponentialForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +106,7 @@
     <Compile Include="MatrixContoller.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrignometeryController.cs" />
     <EmbeddedResource Include="ArithmaticTrignometryForm.resx">
       <DependentUpon>ArithmaticTrignometryForm.cs</DependentUpon>
     </EmbeddedResource>

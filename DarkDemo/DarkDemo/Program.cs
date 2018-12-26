@@ -13,6 +13,8 @@ namespace DarkDemo
         public static HistoryController historyController;
         public static CalculusController calculusController;
         public static ArithmeticController arithmeticController;
+        public static TrignometeryController trignometeryController;
+        public static ExponentialController exponentialController;
 
         [STAThread]
 
@@ -20,14 +22,14 @@ namespace DarkDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //Initialize Controllers
+            // Forms Initialization
             matrixContoller = new MatrixContoller();
             graphController = new GraphController();
             historyController = new HistoryController();
             calculusController = new CalculusController();
             arithmeticController = new ArithmeticController();
-
+            trignometeryController = new TrignometeryController();
+            exponentialController = new ExponentialController();
             //Load Main Form
             home = new Home();
             Application.Run(home);
