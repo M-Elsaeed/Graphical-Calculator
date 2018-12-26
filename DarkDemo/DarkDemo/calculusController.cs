@@ -8,7 +8,7 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    class CalculusController:Controller
+    class CalculusController
     {
         public CalculusForm calculusForm;
 
@@ -25,7 +25,7 @@ namespace DarkDemo
             showHome();
         }
 
-        public void Differentiate(TextBox eqnTextBox,TextBox limitTxtBox,Label resultLbl)
+        public void Differentiate(TextBox eqnTextBox, TextBox limitTxtBox, Label resultLbl)
         {
             string eqn = eqnTextBox.Text;
 
@@ -61,7 +61,7 @@ namespace DarkDemo
 
             List<double> ys = new List<double>();
 
-            while (to>=from)
+            while (to >= from)
             {
                 string xString = eqn.Replace("x", ("(" + from + ")"));
                 xString = xString.Replace("X", ("(" + from + ")"));
@@ -71,9 +71,9 @@ namespace DarkDemo
                 from = from + sliceWidth;
             }
 
-            for (int i = 0; i < ys.Count-1; i++)
+            for (int i = 0; i < ys.Count - 1; i++)
             {
-                area = area + 0.5 * (ys[i] + ys[i + 1])*(sliceWidth);
+                area = area + 0.5 * (ys[i] + ys[i + 1]) * (sliceWidth);
             }
             resultLbl.Text = area + "";
         }

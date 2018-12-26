@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DarkDemo.Controller" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAEAAAAQAAAAAAAAAAAAAIAAEAAAAAA=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.ArithmeticController">
+    <Position X="6.5" Y="1.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AUAAAAAAAACAQAkAACAAAAAAEAAAAAAAAIAAAABAAAA=</HashCode>
+      <FileName>ArithmeticController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.CalculusController">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAAIAAAAGAAAA=</HashCode>
+      <FileName>CalculusController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.ExponentialController">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ExponentialController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.GraphController">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgEAAAAAAAAAAAAAAABAAIAAAAAAAAA=</HashCode>
+      <FileName>GraphController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.HistoryController">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAEEAAAQAAAAAAAACAgIAIAAAAAAAAA=</HashCode>
+      <FileName>HistoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.MatrixContoller">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAgEAAAEAAiCABEAAQDQACAAAAQAAAEACIAAgAAAAAE=</HashCode>
+      <FileName>MatrixContoller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.TrignometeryController">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrignometeryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.ArithmeticForm">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IANnoYBDwHIhAFhbXgqoJOGSQMVJCQjASGtCS8PUBhE=</HashCode>
+      <FileName>ArithmeticForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.ArithmaticTrignometryForm">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQAAABACAAABCAAAIAAAAAgIAAAAAAAA=</HashCode>
+      <FileName>ArithmaticTrignometryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.CalculusForm">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAQAIAAICEAABACNACgAIQCAAABQACAQFIiAUAIAAA=</HashCode>
+      <FileName>CalculusForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.ExponentialForm">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASBAAAAABACAAABCAAAAAAAAAEIAAAAAAAA=</HashCode>
+      <FileName>ExponentialForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.GraphForm">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAACAAAACBAABAABACgAABCAAAAACAAYEKAAQAAABA=</HashCode>
+      <FileName>GraphForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.HistoryForm">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAAAAABACgAAACAAAAAAAAQAAAARAAAAA=</HashCode>
+      <FileName>HistoryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.MatrixForm">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAwCJBAAAAJBKgAICCSIAABABBAEAgAQIBACA=</HashCode>
+      <FileName>MatrixForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DarkDemo.Matrix">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace DarkDemo
 {
-    public class MatrixContoller : Controller
+    public class MatrixContoller
     {
         public MatrixForm matrixForm;
 
@@ -41,7 +41,7 @@ namespace DarkDemo
             counter = 0;
         }
 
-        public void makeMatrix(int column, int row, Form form, Button makeMatrixBtn, Button saveBtn,TextBox columnTxtBox,TextBox rowTxtBox, Button transposeBtn)
+        public void makeMatrix(int column, int row, Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
             counter++;
             textboxes = new List<List<TextBox>>();
@@ -82,7 +82,7 @@ namespace DarkDemo
             rowTxtBox.Enabled = false;
         }
 
-        public void saveMatrix(int column, int row, Form form, Button makeMatrixBtn, Button plusBtn, Button minusBtn, Button multiplyBtn, Button saveBtn,TextBox columnTxtBox, TextBox rowTxtBox,Button transposeBtn)
+        public void saveMatrix(int column, int row, Form form, Button makeMatrixBtn, Button plusBtn, Button minusBtn, Button multiplyBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
         {
             matrix = new Matrix();
             for (int i = 0; i < row; i++)
@@ -104,7 +104,7 @@ namespace DarkDemo
                 rowM1 = row;
                 columnM1 = column;
             }
-            else if(counter == 2)
+            else if (counter == 2)
             {
                 matrix2 = new Matrix();
                 matrix2.values = matrix.values;
@@ -134,7 +134,7 @@ namespace DarkDemo
 
             columnTxtBox.Enabled = true;
             rowTxtBox.Enabled = true;
-            
+
         }
 
         public void matrixAddition(Form form, Button makeMatrixBtn, Button saveBtn, TextBox columnTxtBox, TextBox rowTxtBox, Button transposeBtn)
@@ -210,9 +210,9 @@ namespace DarkDemo
                         matrix3.values[i][j] += matrix1.values[i][k] * matrix2.values[k][j];
                     }
                 }
-                    
+
             }
-            
+
             makeMatrix(columnM2, rowM1, form, makeMatrixBtn, saveBtn, columnTxtBox, rowTxtBox, transposeBtn);
 
             for (int i = 0; i < rowM1; i++)

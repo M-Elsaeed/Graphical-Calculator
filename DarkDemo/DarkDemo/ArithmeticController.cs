@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace DarkDemo
 {
-    class ArithmeticController : Controller
+    class ArithmeticController
     {
         public ArithmaticTrignometryForm arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         public ExponentialForm exponentialForm = new ExponentialForm();
         public ArithmeticForm arithmetic;
-        public static string angle  = "";
+        public static string angle = "";
         public static string number = "";
         public static string eqnToEvaluate = "";
 

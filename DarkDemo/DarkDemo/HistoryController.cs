@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace DarkDemo
 {
-    class HistoryController : Controller
+    class HistoryController
     {
         private HistoryForm historyForm;
         private List<float> results = new List<float>();

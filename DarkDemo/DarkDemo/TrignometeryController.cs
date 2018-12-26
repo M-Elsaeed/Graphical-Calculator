@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace DarkDemo
 {
-    class TrignometeryController:ArithmeticController
+    class TrignometeryController
     {
         public void trignometry(Button button, TextBox equationTxtBox)
         {
