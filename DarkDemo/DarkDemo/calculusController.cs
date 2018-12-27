@@ -8,7 +8,7 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    class CalculusController
+    class CalculusController:Controller
     {
         public CalculusForm calculusForm;
 

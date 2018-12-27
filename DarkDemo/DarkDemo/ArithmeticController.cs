@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DarkDemo
 {
-    class ArithmeticController
+    class ArithmeticController:Controller
     {
         public ArithmaticTrignometryForm arithmaticTrignometryForm = new ArithmaticTrignometryForm();
         public ExponentialForm exponentialForm = new ExponentialForm();

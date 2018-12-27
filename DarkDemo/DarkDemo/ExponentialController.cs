@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace DarkDemo
 {
-    class ExponentialController
+    class ExponentialController : ArithmeticController
     {
         public void exp(Button button, TextBox equationTxtBox)
         {

@@ -5,7 +5,7 @@ using LoreSoft.MathExpressions;
 
 namespace DarkDemo
 {
-    class GraphController
+    class GraphController : Controller
     {
         public GraphForm graphForm;
 
